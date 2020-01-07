@@ -323,7 +323,7 @@ $EndComp
 Wire Wire Line
 	3000 1400 3500 1400
 Text Notes 550  3400 0    50   ~ 0
-It is recommended to install\nthe protection diode between Vbus and +5V!\n\nProtection diode is not installed on original BluePill, \nbut is sugested in order to protect computers USB\nport if  board is simulatneously pluged to computer\nand external power source.\nUsually it is either:\n- SS14 : in SMA (DO-214AC) Package\n- BAT54 : in SOT23\n- BAT60JFILM : up to 3A in SOD-323 case (Nucleo)\n- MBR0520LT1G : up to 0.5 A in SOD-123 Package\n- K24 : up to 2 A in SOD-123FL package (Black Pill)\n- PMEG2010EA : SOD323\n- STPS1L30A : SMA or SMA
+It is recommended to install\nthe protection diode between Vbus and +5V!\n\nProtection diode is not installed on original BluePill, \nbut is sugested in order to protect computers USB\nport if  board is simulatneously pluged to computer\nand external power source.\nUsually it is either:\n- SS14 : in SMA (DO-214AC) Package\n- BAT54 : in SOT23\n- BAT60JFILM : up to 3A in SOD-323 case (Nucleo)\n- MBR0520LT1G : up to 0.5 A in SOD-123 Package\n- K24 : up to 2 A in SOD-123FL package (Black Pill)\n- PMEG2010EA : SOD323\n- STPS1L30A : SMA or SMA\n- SD103*WS : SOD323 [marked S4] : MapleMini
 $Comp
 L power:+3.3V #PWR030
 U 1 1 5E0B07ED
@@ -940,8 +940,8 @@ Wire Wire Line
 	7250 3300 7250 3250
 Text GLabel 7350 2850 2    50   Input ~ 0
 NRST
-Text Notes 4450 4100 0    50   ~ 0
-BluePill boards from TaoBao have diferent design:\n+ extra 1M or 10M resistor between OSCIN | OSCOUT \n- no GND connection for capacitors\nSame  concept can be found on some RedPill boards.\nRecommended design from STM has no resistor!\nIn this schematic it is OPTIONAL!\nBluePill uses crystal in HC-49S (HC-49-4H) package.\nBlackPill uses both: resistor (10M) and \ngrounding for capacitors.
+Text Notes 4450 4200 0    50   ~ 0
+BluePill boards from TaoBao have diferent design:\n+ extra 1M or 10M resistor between OSCIN | OSCOUT \n- no GND connection for capacitors\nSame  concept can be found on some RedPill boards.\nRecommended design from STM has no resistor!\nIn this schematic it is OPTIONAL!\nBluePill uses crystal in HC-49S (HC-49-4H) package.\nBlackPill uses both: resistor (10M) and \ngrounding for capacitors.\nMapleMinu uses AMB3AIG-8.000MHZ [5.0mm x 3.2 mm]
 $Comp
 L power:GNDREF #PWR028
 U 1 1 5DE9878B
@@ -1283,7 +1283,7 @@ Wire Wire Line
 Text Notes 6800 1800 0    50   ~ 0
 PC13 : Green\nPower : Red
 Text Notes 9100 5800 0    50   ~ 0
-Typically used diodes:\n- 1N5819: in SOD123F or DO-41\n- LSM115JE3/TR13 : DO-214BA\n- BAS70 : in SOT23\n- 1N4448 : in SOD123
+Typically used diodes:\n- 1N5819: in SOD123F or DO-41\n- LSM115JE3/TR13 : DO-214BA\n- BAS70 : in SOT23\n- 1N4448 : in SOD123\n- BAT54C : in SOT-23 : WeAct F4x1 DevBoards
 Text Notes 700  6500 0    50   ~ 0
 Some clones uses AMS1117 as Linear Voltage Regulator\nwith tantalum SMD capacitors:\n- Pre-capacitor\n- Post-capacitor
 $Comp
