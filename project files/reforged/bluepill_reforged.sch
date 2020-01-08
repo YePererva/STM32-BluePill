@@ -547,7 +547,7 @@ U 1 1 5E12857D
 P 2000 1050
 F 0 "D1" H 2000 834 50  0000 C CNN
 F 1 "Protection" H 2000 925 50  0000 C CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 2000 1050 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-128" H 2000 1050 50  0001 C CNN
 F 3 "~" H 2000 1050 50  0001 C CNN
 	1    2000 1050
 	-1   0    0    1   
@@ -643,7 +643,7 @@ L Device:C C3
 U 1 1 5DEE4C85
 P 3600 2550
 F 0 "C3" H 3715 2596 50  0000 L CNN
-F 1 "1uF" H 3715 2505 50  0000 L CNN
+F 1 "100nf" H 3715 2505 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3638 2400 50  0001 C CNN
 F 3 "~" H 3600 2550 50  0001 C CNN
 	1    3600 2550
@@ -766,7 +766,7 @@ L Device:LED D2
 U 1 1 5E3E3874
 P 5900 1150
 F 0 "D2" H 5893 895 50  0000 C CNN
-F 1 "Green" H 5893 986 50  0000 C CNN
+F 1 "PC13" H 5893 986 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5900 1150 50  0001 C CNN
 F 3 "~" H 5900 1150 50  0001 C CNN
 	1    5900 1150
@@ -1151,12 +1151,12 @@ Wire Wire Line
 	10000 6350 9450 6350
 Wire Wire Line
 	9450 6250 9450 6350
-Text GLabel 9500 2450 0    50   Input ~ 0
+Text GLabel 9250 2600 0    50   Input ~ 0
 SWO
-Text GLabel 9650 2450 2    50   Input ~ 0
+Text GLabel 9400 2600 2    50   Input ~ 0
 PB3
 Text Notes 9600 2150 0    100  Italic 20
-SWD interface
+STDC14 interface
 $Comp
 L power:+BATT #PWR040
 U 1 1 5E61B0D9
@@ -1171,59 +1171,48 @@ $EndComp
 $Comp
 L power:+BATT #PWR025
 U 1 1 5E61C7BB
-P 7200 5250
-F 0 "#PWR025" H 7200 5100 50  0001 C CNN
-F 1 "+BATT" H 7215 5423 50  0000 C CNN
-F 2 "" H 7200 5250 50  0001 C CNN
-F 3 "" H 7200 5250 50  0001 C CNN
-	1    7200 5250
+P 7550 5350
+F 0 "#PWR025" H 7550 5200 50  0001 C CNN
+F 1 "+BATT" H 7565 5523 50  0000 C CNN
+F 2 "" H 7550 5350 50  0001 C CNN
+F 3 "" H 7550 5350 50  0001 C CNN
+	1    7550 5350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR026
 U 1 1 5E61D33E
-P 7650 5250
-F 0 "#PWR026" H 7650 5100 50  0001 C CNN
-F 1 "+3.3V" H 7665 5378 50  0000 L CNN
-F 2 "" H 7650 5250 50  0001 C CNN
-F 3 "" H 7650 5250 50  0001 C CNN
-	1    7650 5250
+P 8150 5350
+F 0 "#PWR026" H 8150 5200 50  0001 C CNN
+F 1 "+3.3V" H 8165 5478 50  0000 L CNN
+F 2 "" H 8150 5350 50  0001 C CNN
+F 3 "" H 8150 5350 50  0001 C CNN
+	1    8150 5350
 	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N5819 D5
-U 1 1 5E61DE4A
-P 7650 5400
-F 0 "D5" V 7696 5321 50  0000 R CNN
-F 1 "1N5819" V 7605 5321 50  0000 R CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7650 5225 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 7650 5400 50  0001 C CNN
-	1    7650 5400
-	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C C9
 U 1 1 5E61F79C
-P 7650 5700
-F 0 "C9" H 7765 5746 50  0000 L CNN
-F 1 "100n" H 7765 5655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7688 5550 50  0001 C CNN
-F 3 "~" H 7650 5700 50  0001 C CNN
-	1    7650 5700
+P 7850 5700
+F 0 "C9" H 7965 5746 50  0000 L CNN
+F 1 "100n" H 7965 5655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7888 5550 50  0001 C CNN
+F 3 "~" H 7850 5700 50  0001 C CNN
+	1    7850 5700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDREF #PWR027
 U 1 1 5E620338
-P 7650 5850
-F 0 "#PWR027" H 7650 5600 50  0001 C CNN
-F 1 "GNDREF" H 7655 5677 50  0000 C CNN
-F 2 "" H 7650 5850 50  0001 C CNN
-F 3 "" H 7650 5850 50  0001 C CNN
-	1    7650 5850
+P 7850 5850
+F 0 "#PWR027" H 7850 5600 50  0001 C CNN
+F 1 "GNDREF" H 7855 5677 50  0000 C CNN
+F 2 "" H 7850 5850 50  0001 C CNN
+F 3 "" H 7850 5850 50  0001 C CNN
+	1    7850 5850
 	1    0    0    -1  
 $EndComp
-Text GLabel 8000 5550 2    50   Input ~ 0
+Text GLabel 8200 5550 2    50   Input ~ 0
 VBAT_Protected
 Text GLabel 7850 900  2    50   Input ~ 0
 VBAT_Protected
@@ -1232,8 +1221,7 @@ Wire Wire Line
 Wire Wire Line
 	7750 900  7750 1050
 Wire Wire Line
-	7650 5550 8000 5550
-Connection ~ 7650 5550
+	7850 5550 8200 5550
 Text Notes 7250 5000 0    100  Italic 20
 RTC Power Protection
 Wire Wire Line
@@ -1292,7 +1280,7 @@ L Device:C C8
 U 1 1 5DE25D99
 P 6200 3000
 F 0 "C8" H 6315 3046 50  0000 L CNN
-F 1 "1uF" H 6315 2955 50  0000 L CNN
+F 1 "100nf" H 6315 2955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6238 2850 50  0001 C CNN
 F 3 "~" H 6200 3000 50  0001 C CNN
 	1    6200 3000
@@ -1330,80 +1318,115 @@ Text Notes 600  4950 0    50   ~ 0
 Originally, BluePill contained RT8183-B as voltage regulator. It is outdated. \nDirect replacement: RT9193-33GB, but it is capable to deliver up to 300mA.\nUSB type C can provide up to 1.5 A over USB 2.0 connectivity.\n- to provide < 1A use Linear Voltage regulators\n- to go > 1A : use DC-DC converters
 NoConn ~ 4850 1350
 NoConn ~ 4850 950 
-$Comp
-L Diode:1N5819 D4
-U 1 1 5E15A95B
-P 7200 5400
-F 0 "D4" V 7246 5321 50  0000 R CNN
-F 1 "1N5819" V 7155 5321 50  0000 R CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7200 5225 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 7200 5400 50  0001 C CNN
-	1    7200 5400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7200 5550 7650 5550
-Text GLabel 9500 2550 0    50   Input ~ 0
+Text GLabel 9250 2700 0    50   Input ~ 0
 SWDIO
-Text GLabel 9500 2650 0    50   Input ~ 0
+Text GLabel 9250 2800 0    50   Input ~ 0
 SWCLK
 Text GLabel 8550 3650 2    50   Input ~ 0
 PA13
-Text GLabel 9650 2550 2    50   Input ~ 0
+Text GLabel 9400 2700 2    50   Input ~ 0
 PA13
-Text GLabel 9650 2650 2    50   Input ~ 0
+Text GLabel 9400 2800 2    50   Input ~ 0
 PA14
-$Comp
-L power:+3.3V #PWR037
-U 1 1 5E177ECC
-P 10350 2350
-F 0 "#PWR037" H 10350 2200 50  0001 C CNN
-F 1 "+3.3V" H 10365 2478 50  0000 L CNN
-F 2 "" H 10350 2350 50  0001 C CNN
-F 3 "" H 10350 2350 50  0001 C CNN
-	1    10350 2350
-	1    0    0    -1  
-$EndComp
-NoConn ~ 10850 3150
-Text GLabel 10850 3050 2    50   Input ~ 0
-SWO
-Text GLabel 10850 2950 2    50   Input ~ 0
-SWDIO
-Text GLabel 10850 2850 2    50   Input ~ 0
-SWCLK
-Text GLabel 10850 2650 2    50   Input ~ 0
-NRST
-$Comp
-L Connector:Conn_ARM_JTAG_SWD_10 J3
-U 1 1 5E16EB42
-P 10350 2950
-F 0 "J3" H 9906 2996 50  0000 R CNN
-F 1 "Cortex debug" H 9906 2905 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 10350 2950 50  0001 C CNN
-F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 10000 1700 50  0001 C CNN
-	1    10350 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDREF #PWR038
-U 1 1 5E1809F7
-P 10350 3550
-F 0 "#PWR038" H 10350 3300 50  0001 C CNN
-F 1 "GNDREF" H 10355 3377 50  0000 C CNN
-F 2 "" H 10350 3550 50  0001 C CNN
-F 3 "" H 10350 3550 50  0001 C CNN
-	1    10350 3550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10250 3550 10350 3550
-Connection ~ 10350 3550
 Wire Notes Line
 	6750 500  6750 3950
 Wire Wire Line
-	9650 2450 9500 2450
+	9400 2600 9250 2600
 Wire Wire Line
-	9500 2550 9650 2550
+	9250 2700 9400 2700
 Wire Wire Line
-	9650 2650 9500 2650
+	9400 2800 9250 2800
+$Comp
+L Diode:BAT54C D4
+U 1 1 5E16540C
+P 7850 5350
+F 0 "D4" H 7850 5575 50  0000 C CNN
+F 1 "BAT54C" H 7850 5484 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7925 5475 50  0001 L CNN
+F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 7770 5350 50  0001 C CNN
+	1    7850 5350
+	1    0    0    -1  
+$EndComp
+Connection ~ 7850 5550
+$Comp
+L Connector_Generic:Conn_02x07_Odd_Even J3
+U 1 1 5E19328C
+P 10500 2900
+F 0 "J3" H 10550 3417 50  0000 C CNN
+F 1 "STDC14" H 10550 3326 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x07_P1.27mm_Vertical_SMD" H 10500 2900 50  0001 C CNN
+F 3 "~" H 10500 2900 50  0001 C CNN
+	1    10500 2900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10300 2600
+NoConn ~ 10800 2600
+Text GLabel 10800 2800 2    50   Input ~ 0
+SWCLK
+Text GLabel 10800 3100 2    50   Input ~ 0
+NRST
+Text GLabel 10800 2700 2    50   Input ~ 0
+SWDIO
+$Comp
+L power:+3.3V #PWR037
+U 1 1 5E1A21E5
+P 9900 2500
+F 0 "#PWR037" H 9900 2350 50  0001 C CNN
+F 1 "+3.3V" H 9915 2628 50  0000 L CNN
+F 2 "" H 9900 2500 50  0001 C CNN
+F 3 "" H 9900 2500 50  0001 C CNN
+	1    9900 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 2700 9900 2700
+Wire Wire Line
+	9900 2700 9900 2500
+Text GLabel 10800 2900 2    50   Input ~ 0
+SWO
+NoConn ~ 10800 3000
+NoConn ~ 10300 3000
+Wire Wire Line
+	10300 2800 10200 2800
+Wire Wire Line
+	10200 2800 10200 2900
+Wire Wire Line
+	10200 2900 10300 2900
+Wire Wire Line
+	10300 3100 10200 3100
+Wire Wire Line
+	10200 3100 10200 2900
+Connection ~ 10200 2900
+$Comp
+L power:GNDREF #PWR038
+U 1 1 5E1B90CD
+P 9900 2900
+F 0 "#PWR038" H 9900 2650 50  0001 C CNN
+F 1 "GNDREF" H 9905 2727 50  0000 C CNN
+F 2 "" H 9900 2900 50  0001 C CNN
+F 3 "" H 9900 2900 50  0001 C CNN
+	1    9900 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 2800 9900 2800
+Wire Wire Line
+	9900 2800 9900 2900
+Connection ~ 10200 2800
+Text GLabel 10800 3200 2    50   Output ~ 0
+TX
+Text GLabel 10300 3200 0    50   Input ~ 0
+RX
+Text GLabel 9250 2900 0    50   Input ~ 0
+RX
+Text GLabel 9250 3000 0    50   Output ~ 0
+TX
+Text GLabel 9400 3000 2    50   Input ~ 0
+PA9
+Text GLabel 9400 2900 2    50   Input ~ 0
+PA10
+Wire Wire Line
+	9250 2900 9400 2900
+Wire Wire Line
+	9250 3000 9400 3000
 $EndSCHEMATC
