@@ -38,12 +38,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J5
 U 1 1 5DE0F7EB
-P 8150 5250
-F 0 "J5" H 8230 5242 50  0000 L CNN
-F 1 "SWD" H 8230 5151 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 8150 5250 50  0001 C CNN
-F 3 "~" H 8150 5250 50  0001 C CNN
-	1    8150 5250
+P 8450 5150
+F 0 "J5" H 8530 5142 50  0000 L CNN
+F 1 "SWD" H 8530 5051 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 8450 5150 50  0001 C CNN
+F 3 "~" H 8450 5150 50  0001 C CNN
+	1    8450 5150
 	1    0    0    1   
 $EndComp
 Text Notes 6650 700  0    100  Italic 20
@@ -259,18 +259,18 @@ Connection ~ 10100 1000
 $Comp
 L Device:C C10
 U 1 1 5E02788D
-P 7350 5200
-F 0 "C10" H 7235 5154 50  0000 R CNN
-F 1 "100n" H 7235 5245 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7388 5050 50  0001 C CNN
-F 3 "~" H 7350 5200 50  0001 C CNN
-	1    7350 5200
+P 7650 5100
+F 0 "C10" H 7535 5054 50  0000 R CNN
+F 1 "100n" H 7535 5145 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7688 4950 50  0001 C CNN
+F 3 "~" H 7650 5100 50  0001 C CNN
+	1    7650 5100
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7950 5050 7350 5050
+	8250 4950 7650 4950
 Wire Wire Line
-	7350 5350 7950 5350
+	7650 5250 8250 5250
 $Comp
 L power:+3.3V #PWR09
 U 1 1 5E0C47D9
@@ -323,35 +323,35 @@ $EndComp
 Wire Wire Line
 	3000 1400 3500 1400
 Text Notes 550  3800 0    50   ~ 0
-It is recommended to install\nthe protection diode between Vbus and +5V!\n\nProtection diode is not installed on original BluePill, \nbut is sugested in order to protect computers USB\nport if  board is simulatneously pluged to computer\nand external power source.\nUsually it is either:\n- SS14 : in SMA (DO-214AC) Package\n- BAT54 : in SOT23\n- BAT60JFILM : up to 3A in SOD-323 case (Nucleo)\n- MBR0520LT1G : up to 0.5 A in SOD-123 Package\n- K24 : up to 2 A in SOD-123FL package (Black Pill)\n- PMEG2010EA : SOD323\n- STPS1L30A : SMA or SMA\n- SD103*WS : SOD323 [marked S4] : MapleMini\nExtra options:\n- RBS2LAM40C  : in SOT-128\n- DFN1608D-2 : in SOD1608
+Protection diode is not installed on original BluePill, \nbut is sugested in order to protect computers USB\nport if  board is simulatneously pluged to computer\nand external power source.\nUsually it is either:\n- SS14 : in SMA (DO-214AC) Package\n- BAT54 : in SOT23\n- BAT60JFILM : up to 3A in SOD-323 case (Nucleo)\n- MBR0520LT1G : up to 0.5 A in SOD-123 Package\n- K24 : up to 2 A in SOD-123FL package (Black Pill)\n- PMEG2010EA : SOD323\n- STPS1L30A : SMA or SMA\n- SD103*WS : SOD323 [marked S4] : MapleMini\nExtra options:\n- RBS2LAM40C  : in SOT-128\n- DFN1608D-2 : in SOD1608
 $Comp
 L power:+3.3V #PWR030
 U 1 1 5E0B07ED
-P 7350 5000
-F 0 "#PWR030" H 7350 4850 50  0001 C CNN
-F 1 "+3.3V" H 7365 5128 50  0000 L CNN
-F 2 "" H 7350 5000 50  0001 C CNN
-F 3 "" H 7350 5000 50  0001 C CNN
-	1    7350 5000
+P 7650 4900
+F 0 "#PWR030" H 7650 4750 50  0001 C CNN
+F 1 "+3.3V" H 7665 5028 50  0000 L CNN
+F 2 "" H 7650 4900 50  0001 C CNN
+F 3 "" H 7650 4900 50  0001 C CNN
+	1    7650 4900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDREF #PWR031
 U 1 1 5E0B0BD6
-P 7350 5400
-F 0 "#PWR031" H 7350 5150 50  0001 C CNN
-F 1 "GNDREF" H 7355 5227 50  0000 C CNN
-F 2 "" H 7350 5400 50  0001 C CNN
-F 3 "" H 7350 5400 50  0001 C CNN
-	1    7350 5400
+P 7650 5300
+F 0 "#PWR031" H 7650 5050 50  0001 C CNN
+F 1 "GNDREF" H 7655 5127 50  0000 C CNN
+F 2 "" H 7650 5300 50  0001 C CNN
+F 3 "" H 7650 5300 50  0001 C CNN
+	1    7650 5300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7350 5050 7350 5000
-Connection ~ 7350 5050
+	7650 4950 7650 4900
+Connection ~ 7650 4950
 Wire Wire Line
-	7350 5400 7350 5350
-Connection ~ 7350 5350
+	7650 5300 7650 5250
+Connection ~ 7650 5250
 $Comp
 L Connector_Generic:Conn_01x20 J4
 U 1 1 5DEFA97C
@@ -404,16 +404,14 @@ USB to serial (VCP)
 $Comp
 L power:+5V #PWR06
 U 1 1 5E127D96
-P 1950 1200
-F 0 "#PWR06" H 1950 1050 50  0001 C CNN
-F 1 "+5V" H 1965 1373 50  0000 C CNN
-F 2 "" H 1950 1200 50  0001 C CNN
-F 3 "" H 1950 1200 50  0001 C CNN
-	1    1950 1200
+P 2150 1200
+F 0 "#PWR06" H 2150 1050 50  0001 C CNN
+F 1 "+5V" H 2165 1373 50  0000 C CNN
+F 2 "" H 2150 1200 50  0001 C CNN
+F 3 "" H 2150 1200 50  0001 C CNN
+	1    2150 1200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1950 1200 1950 1250
 Wire Wire Line
 	3050 1550 3000 1550
 Text GLabel 8350 1450 0    50   Input ~ 0
@@ -549,9 +547,9 @@ Wire Wire Line
 	7550 1500 7550 1550
 Wire Wire Line
 	6800 950  6800 1150
-Text GLabel 5400 800  2    50   Input ~ 0
-PC14
 Text GLabel 5400 1000 2    50   Input ~ 0
+PC14
+Text GLabel 5400 800  2    50   Input ~ 0
 PC15
 Text GLabel 8350 2050 0    50   Input ~ 0
 PC14
@@ -897,17 +895,17 @@ Wire Wire Line
 	5750 6850 5200 6850
 Wire Wire Line
 	5200 6750 5200 6850
-Text GLabel 7950 5150 0    50   Input ~ 0
+Text GLabel 8250 5050 0    50   Input ~ 0
 SWDIO
-Text GLabel 7950 5250 0    50   Input ~ 0
+Text GLabel 8250 5150 0    50   Input ~ 0
 SWCLK
-Text GLabel 7500 5750 0    50   Input ~ 0
+Text GLabel 7800 5650 0    50   Input ~ 0
 SWO
-Text GLabel 8000 5750 2    50   Input ~ 0
+Text GLabel 8300 5650 2    50   Input ~ 0
 PB3
 Wire Wire Line
-	7500 5750 8000 5750
-Text Notes 7250 4750 0    100  Italic 20
+	7800 5650 8300 5650
+Text Notes 7550 4650 0    100  Italic 20
 SWD interface
 $Comp
 L power:+BATT #PWR024
@@ -1132,12 +1130,12 @@ Wire Wire Line
 $Comp
 L power:VBUS #PWR04
 U 1 1 5DED193B
-P 1750 1200
-F 0 "#PWR04" H 1750 1050 50  0001 C CNN
-F 1 "VBUS" H 1765 1373 50  0000 C CNN
-F 2 "" H 1750 1200 50  0001 C CNN
-F 3 "" H 1750 1200 50  0001 C CNN
-	1    1750 1200
+P 1350 1200
+F 0 "#PWR04" H 1350 1050 50  0001 C CNN
+F 1 "VBUS" H 1365 1373 50  0000 C CNN
+F 2 "" H 1350 1200 50  0001 C CNN
+F 3 "" H 1350 1200 50  0001 C CNN
+	1    1350 1200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1259,14 +1257,9 @@ F 3 "~" H 1750 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 1250 1750 1250
+	1250 1250 1350 1250
 Wire Wire Line
 	1750 1450 1750 1250
-Connection ~ 1750 1250
-Wire Wire Line
-	1750 1250 1950 1250
-Wire Wire Line
-	1750 1200 1750 1250
 $Comp
 L power:GNDREF #PWR05
 U 1 1 5E167A73
@@ -1282,21 +1275,99 @@ Wire Wire Line
 	1750 1950 1750 1750
 Text Notes 6800 1800 0    50   ~ 0
 PC13 : Green\nPower : Red
-Text Notes 9100 5800 0    50   ~ 0
+Text Notes 9100 6450 0    50   ~ 0
 Typically used diodes:\n- 1N5819: in SOD123F or DO-41\n- LSM115JE3/TR13 : DO-214BA\n- BAS70 : in SOT23\n- 1N4448 : in SOD123\n- BAT54C : in SOT-23 : WeAct F4x1 DevBoards
 Text Notes 700  6500 0    50   ~ 0
 Some clones uses AMS1117 as Linear Voltage Regulator\nwith tantalum SMD capacitors:\n- Pre-capacitor\n- Post-capacitor
+Text Notes 9100 5950 0    50   ~ 0
+Not Present on original BluePill.\nHighly recomended.
 $Comp
-L power:+BATT #PWR033
-U 1 1 5E161622
-P 8850 900
-F 0 "#PWR033" H 8850 750 50  0001 C CNN
-F 1 "+BATT" H 8865 1027 50  0000 L CNN
-F 2 "" H 8850 900 50  0001 C CNN
-F 3 "" H 8850 900 50  0001 C CNN
-	1    8850 900 
+L Device:D_Schottky D3
+U 1 1 5E178BE9
+P 1900 1250
+F 0 "D3" H 1900 1034 50  0000 C CNN
+F 1 "SD103AWS" H 1900 1125 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 1900 1250 50  0001 C CNN
+F 3 "~" H 1900 1250 50  0001 C CNN
+	1    1900 1250
+	-1   0    0    1   
+$EndComp
+Connection ~ 1750 1250
+Wire Wire Line
+	2050 1250 2150 1250
+Wire Wire Line
+	2150 1250 2150 1200
+Wire Wire Line
+	1350 1200 1350 1250
+Connection ~ 1350 1250
+Wire Wire Line
+	1350 1250 1750 1250
+Text GLabel 8900 900  2    50   Input ~ 0
+Vbat_protected
+Wire Wire Line
+	8900 900  8850 900 
+Text GLabel 9550 5250 2    50   Input ~ 0
+Vbat_protected
+$Comp
+L Diode:BAT54C D4
+U 1 1 5E189BAD
+P 9450 5050
+F 0 "D4" H 9450 5275 50  0000 C CNN
+F 1 "BAT54C" H 9450 5184 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9525 5175 50  0001 L CNN
+F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 9370 5050 50  0001 C CNN
+	1    9450 5050
 	1    0    0    -1  
 $EndComp
-Text Notes 9100 5350 0    50   ~ 0
-Not Present on original BluePill.\nHighly recomended.\n\nPass the 3V3 and Vbat from header through\nseparate (individual) diodes.\nMerge behind diodes, decouple with 100nF.\nProvide this to Vbat of microcontroller.
+$Comp
+L Device:C C15
+U 1 1 5E18C388
+P 9450 5400
+F 0 "C15" H 9565 5446 50  0000 L CNN
+F 1 "100n" H 9565 5355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9488 5250 50  0001 C CNN
+F 3 "~" H 9450 5400 50  0001 C CNN
+	1    9450 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 5250 9450 5250
+Connection ~ 9450 5250
+$Comp
+L power:GNDREF #PWR040
+U 1 1 5E195578
+P 9450 5550
+F 0 "#PWR040" H 9450 5300 50  0001 C CNN
+F 1 "GNDREF" H 9455 5377 50  0000 C CNN
+F 2 "" H 9450 5550 50  0001 C CNN
+F 3 "" H 9450 5550 50  0001 C CNN
+	1    9450 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR033
+U 1 1 5E19686F
+P 9150 4950
+F 0 "#PWR033" H 9150 4800 50  0001 C CNN
+F 1 "+BATT" H 9165 5123 50  0000 C CNN
+F 2 "" H 9150 4950 50  0001 C CNN
+F 3 "" H 9150 4950 50  0001 C CNN
+	1    9150 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR041
+U 1 1 5E1982AA
+P 9750 4950
+F 0 "#PWR041" H 9750 4800 50  0001 C CNN
+F 1 "+3.3V" H 9765 5123 50  0000 C CNN
+F 2 "" H 9750 4950 50  0001 C CNN
+F 3 "" H 9750 4950 50  0001 C CNN
+	1    9750 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 5050 9750 4950
+Wire Wire Line
+	9150 5050 9150 4950
 $EndSCHEMATC
