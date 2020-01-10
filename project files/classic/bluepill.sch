@@ -323,7 +323,7 @@ $EndComp
 Wire Wire Line
 	3000 1400 3500 1400
 Text Notes 550  3800 0    50   ~ 0
-Protection diode is not installed on original BluePill, \nbut is sugested in order to protect computers USB\nport if  board is simulatneously pluged to computer\nand external power source.\nUsually it is either:\n- SS14 : in SMA (DO-214AC) Package\n- BAT54 : in SOT23\n- BAT60JFILM : up to 3A in SOD-323 case (Nucleo)\n- MBR0520LT1G : up to 0.5 A in SOD-123 Package\n- K24 : up to 2 A in SOD-123FL package (Black Pill)\n- PMEG2010EA : SOD323\n- STPS1L30A : SMA or SMA\n- SD103*WS : SOD323 [marked S4] : MapleMini\nExtra options:\n- RBS2LAM40C  : in SOT-128\n- DFN1608D-2 : in SOD1608
+Protection diode is not installed on original BluePill, \nbut is sugested in order to protect computers USB\nport if  board is simulatneously pluged to computer\nand external power source.\nUsually it is either:\n- SS14 : in SMA (DO-214AC) Package\n- BAT54 : in SOT23\n- BAT60JFILM : up to 3A in SOD-323 case (Nucleo)\n- MBR0520LT1G : up to 0.5 A in SOD-123 Package\n- K24 : up to 2 A in SOD-123FL package (Black Pill)\n- PMEG2010EA : SOD323\n- STPS1L30A : SMA or SMA\n- SD103*WS : SOD323 [marked S4] : MapleMini\n- B340A : Up to 3 A in SMA, DO-214AC (BigEasy Driver)\nExtra options:\n- RBS2LAM40C  : in SOT-128\n- DFN1608D-2 : in SOD1608
 $Comp
 L power:+3.3V #PWR030
 U 1 1 5E0B07ED
