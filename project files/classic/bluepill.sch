@@ -274,12 +274,12 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR09
 U 1 1 5E0C47D9
-P 2800 5300
-F 0 "#PWR09" H 2800 5150 50  0001 C CNN
-F 1 "+3.3V" H 2815 5473 50  0000 C CNN
-F 2 "" H 2800 5300 50  0001 C CNN
-F 3 "" H 2800 5300 50  0001 C CNN
-	1    2800 5300
+P 2850 5650
+F 0 "#PWR09" H 2850 5500 50  0001 C CNN
+F 1 "+3.3V" H 2865 5823 50  0000 C CNN
+F 2 "" H 2850 5650 50  0001 C CNN
+F 3 "" H 2850 5650 50  0001 C CNN
+	1    2850 5650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -312,12 +312,12 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR02
 U 1 1 5E0CACD2
-P 1600 5300
-F 0 "#PWR02" H 1600 5150 50  0001 C CNN
-F 1 "+5V" H 1615 5473 50  0000 C CNN
-F 2 "" H 1600 5300 50  0001 C CNN
-F 3 "" H 1600 5300 50  0001 C CNN
-	1    1600 5300
+P 1650 5650
+F 0 "#PWR02" H 1650 5500 50  0001 C CNN
+F 1 "+5V" H 1665 5823 50  0000 C CNN
+F 2 "" H 1650 5650 50  0001 C CNN
+F 3 "" H 1650 5650 50  0001 C CNN
+	1    1650 5650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1013,120 +1013,120 @@ Text Notes 9700 1800 0    50   ~ 0
 Text Notes 600  4500 0    100  Italic 20
 Power Supply
 Text Notes 600  4950 0    50   ~ 0
-Originally, BluePill contained RT8183-B as voltage regulator. It is outdated. \nDirect replacement: RT9193-33GB, but it is capable to deliver up to 300mA.\nBoth seems to be a copy of LDK-130-3.3 in SOT23-5 (SOT323-5L) package.\n
+Originally, BluePill contained RT8183-B as voltage regulator. It is outdated. \nDirect replacement: RT9193-33GB, but it is capable to deliver up to 300mA.\nBoth seems to be a copy of LDK-130-3.3 in SOT23-5 (SOT323-5L) package.\nPinout compatible with:\n- AP2210-3.3 : up to 300 mA\n
 $Comp
 L Regulator_Linear:LDK130-33_SOT23_SOT353 U1
 U 1 1 5E1140B5
-P 2050 5500
-F 0 "U1" H 2050 5842 50  0000 C CNN
-F 1 "RT8183-33" H 2050 5751 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5_Handsoldering" H 2050 5825 50  0001 C CNN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/29/10/f7/87/2f/66/47/f4/DM00076097.pdf/files/DM00076097.pdf/jcr:content/translations/en.DM00076097.pdf" H 2050 5500 50  0001 C CNN
-	1    2050 5500
+P 2100 5850
+F 0 "U1" H 2100 6192 50  0000 C CNN
+F 1 "RT8183-33" H 2100 6101 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5_Handsoldering" H 2100 6175 50  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/29/10/f7/87/2f/66/47/f4/DM00076097.pdf/files/DM00076097.pdf/jcr:content/translations/en.DM00076097.pdf" H 2100 5850 50  0001 C CNN
+	1    2100 5850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C3
 U 1 1 5E1166B3
-P 2350 5700
-F 0 "C3" H 2235 5654 50  0000 R CNN
-F 1 "22n" H 2235 5745 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2388 5550 50  0001 C CNN
-F 3 "~" H 2350 5700 50  0001 C CNN
-	1    2350 5700
+P 2400 6050
+F 0 "C3" H 2285 6004 50  0000 R CNN
+F 1 "22n" H 2285 6095 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2438 5900 50  0001 C CNN
+F 3 "~" H 2400 6050 50  0001 C CNN
+	1    2400 6050
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GNDREF #PWR010
 U 1 1 5E116D65
-P 2800 5850
-F 0 "#PWR010" H 2800 5600 50  0001 C CNN
-F 1 "GNDREF" H 2805 5677 50  0000 C CNN
-F 2 "" H 2800 5850 50  0001 C CNN
-F 3 "" H 2800 5850 50  0001 C CNN
-	1    2800 5850
+P 2850 6200
+F 0 "#PWR010" H 2850 5950 50  0001 C CNN
+F 1 "GNDREF" H 2855 6027 50  0000 C CNN
+F 2 "" H 2850 6200 50  0001 C CNN
+F 3 "" H 2850 6200 50  0001 C CNN
+	1    2850 6200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDREF #PWR07
 U 1 1 5E117AC1
-P 2050 5850
-F 0 "#PWR07" H 2050 5600 50  0001 C CNN
-F 1 "GNDREF" H 2055 5677 50  0000 C CNN
-F 2 "" H 2050 5850 50  0001 C CNN
-F 3 "" H 2050 5850 50  0001 C CNN
-	1    2050 5850
+P 2100 6200
+F 0 "#PWR07" H 2100 5950 50  0001 C CNN
+F 1 "GNDREF" H 2105 6027 50  0000 C CNN
+F 2 "" H 2100 6200 50  0001 C CNN
+F 3 "" H 2100 6200 50  0001 C CNN
+	1    2100 6200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C1
 U 1 1 5E119CEC
-P 1600 5700
-F 0 "C1" H 1485 5654 50  0000 R CNN
-F 1 "1u" H 1485 5745 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1638 5550 50  0001 C CNN
-F 3 "~" H 1600 5700 50  0001 C CNN
-	1    1600 5700
+P 1650 6050
+F 0 "C1" H 1535 6004 50  0000 R CNN
+F 1 "1u" H 1535 6095 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1688 5900 50  0001 C CNN
+F 3 "~" H 1650 6050 50  0001 C CNN
+	1    1650 6050
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GNDREF #PWR03
 U 1 1 5E11B4BE
-P 1600 5850
-F 0 "#PWR03" H 1600 5600 50  0001 C CNN
-F 1 "GNDREF" H 1605 5677 50  0000 C CNN
-F 2 "" H 1600 5850 50  0001 C CNN
-F 3 "" H 1600 5850 50  0001 C CNN
-	1    1600 5850
+P 1650 6200
+F 0 "#PWR03" H 1650 5950 50  0001 C CNN
+F 1 "GNDREF" H 1655 6027 50  0000 C CNN
+F 2 "" H 1650 6200 50  0001 C CNN
+F 3 "" H 1650 6200 50  0001 C CNN
+	1    1650 6200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 5400 1700 5400
+	1800 5750 1750 5750
 Wire Wire Line
-	1600 5400 1600 5300
+	1650 5750 1650 5650
 Wire Wire Line
-	1600 5550 1600 5400
+	1650 5900 1650 5750
 Wire Wire Line
-	1750 5500 1700 5500
+	1800 5850 1750 5850
 Wire Wire Line
-	1700 5500 1700 5400
-Connection ~ 1700 5400
+	1750 5850 1750 5750
+Connection ~ 1750 5750
 Wire Wire Line
-	1700 5400 1600 5400
+	1750 5750 1650 5750
 $Comp
 L power:GNDREF #PWR08
 U 1 1 5E133A88
-P 2350 5850
-F 0 "#PWR08" H 2350 5600 50  0001 C CNN
-F 1 "GNDREF" H 2355 5677 50  0000 C CNN
-F 2 "" H 2350 5850 50  0001 C CNN
-F 3 "" H 2350 5850 50  0001 C CNN
-	1    2350 5850
+P 2400 6200
+F 0 "#PWR08" H 2400 5950 50  0001 C CNN
+F 1 "GNDREF" H 2405 6027 50  0000 C CNN
+F 2 "" H 2400 6200 50  0001 C CNN
+F 3 "" H 2400 6200 50  0001 C CNN
+	1    2400 6200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C4
 U 1 1 5E133F34
-P 2800 5700
-F 0 "C4" H 2685 5654 50  0000 R CNN
-F 1 "1u" H 2685 5745 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2838 5550 50  0001 C CNN
-F 3 "~" H 2800 5700 50  0001 C CNN
-	1    2800 5700
+P 2850 6050
+F 0 "C4" H 2735 6004 50  0000 R CNN
+F 1 "1u" H 2735 6095 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2888 5900 50  0001 C CNN
+F 3 "~" H 2850 6050 50  0001 C CNN
+	1    2850 6050
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2350 5500 2350 5550
+	2400 5850 2400 5900
 Wire Wire Line
-	2350 5400 2800 5400
+	2400 5750 2850 5750
 Wire Wire Line
-	2800 5400 2800 5300
+	2850 5750 2850 5650
 Wire Wire Line
-	2800 5400 2800 5550
-Connection ~ 2800 5400
-Connection ~ 1600 5400
+	2850 5750 2850 5900
+Connection ~ 2850 5750
+Connection ~ 1650 5750
 Wire Wire Line
-	2050 5850 2050 5800
+	2100 6200 2100 6150
 $Comp
 L power:VBUS #PWR04
 U 1 1 5DED193B
@@ -1277,8 +1277,8 @@ Text Notes 6800 1800 0    50   ~ 0
 PC13 : Green\nPower : Red
 Text Notes 9100 6450 0    50   ~ 0
 Typically used diodes:\n- 1N5819: in SOD123F or DO-41\n- LSM115JE3/TR13 : DO-214BA\n- BAS70 : in SOT23\n- 1N4448 : in SOD123\n- BAT54C : in SOT-23 : WeAct F4x1 DevBoards
-Text Notes 700  6500 0    50   ~ 0
-Some clones uses AMS1117 as Linear Voltage Regulator\nwith tantalum SMD capacitors:\n- Pre-capacitor\n- Post-capacitor
+Text Notes 750  6850 0    50   ~ 0
+Some clones uses AMS1117 as Linear Voltage Regulator\nwith tantalum SMD capacitors:\n- Pre-capacitor: 7343 Metric Package : \n- Post-capacitor: 7343 Metric Package :
 Text Notes 9100 5950 0    50   ~ 0
 Not Present on original BluePill.\nHighly recomended.
 $Comp
@@ -1370,4 +1370,6 @@ Wire Wire Line
 	9750 5050 9750 4950
 Wire Wire Line
 	9150 5050 9150 4950
+Text Notes 550  4200 0    50   ~ 0
+Another suggestion is to use polymer resettable fuse like:\n- case 1210 (inch) : from Samsung Tab batteries\n- case 1206 : typically used on ST-Link clones
 $EndSCHEMATC
