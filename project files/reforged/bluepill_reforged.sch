@@ -434,13 +434,13 @@ RedPill utilizes AMS1117 and used:\n- pre-capacitor : 25V 100 uF\n- post-capacit
 $Comp
 L Connector_Generic:Conn_01x20 J4
 U 1 1 5DEFA97C
-P 10800 5250
-F 0 "J4" H 10750 6350 50  0000 L CNN
-F 1 "Right Castellation" H 10450 6300 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 10800 5250 50  0001 C CNN
-F 3 "~" H 10800 5250 50  0001 C CNN
-	1    10800 5250
-	1    0    0    -1  
+P 10800 5350
+F 0 "J4" H 10750 6450 50  0000 L CNN
+F 1 "Right Castellation" H 10450 6400 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 10800 5350 50  0001 C CNN
+F 3 "~" H 10800 5350 50  0001 C CNN
+	1    10800 5350
+	1    0    0    1   
 $EndComp
 Text Notes 10750 4150 2    100  Italic 20
 Pin Header\nas DIP-40
@@ -1137,7 +1137,7 @@ Wire Wire Line
 Wire Wire Line
 	10550 4450 10550 4350
 Wire Wire Line
-	10550 4250 11000 4250
+	10550 4250 10600 4250
 Wire Wire Line
 	11000 4250 11000 4450
 Wire Wire Line
@@ -1429,4 +1429,40 @@ Wire Wire Line
 	9250 2900 9400 2900
 Wire Wire Line
 	9250 3000 9400 3000
+$Comp
+L power:VBUS #PWR042
+U 1 1 5E28CF9E
+P 750 3100
+F 0 "#PWR042" H 750 2950 50  0001 C CNN
+F 1 "VBUS" H 765 3273 50  0000 C CNN
+F 2 "" H 750 3100 50  0001 C CNN
+F 3 "" H 750 3100 50  0001 C CNN
+	1    750  3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 5E28D22C
+P 750 3250
+F 0 "C14" H 865 3296 50  0000 L CNN
+F 1 "100n" H 865 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 788 3100 50  0001 C CNN
+F 3 "~" H 750 3250 50  0001 C CNN
+	1    750  3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR043
+U 1 1 5E28DB6A
+P 750 3400
+F 0 "#PWR043" H 750 3150 50  0001 C CNN
+F 1 "GNDREF" H 755 3227 50  0000 C CNN
+F 2 "" H 750 3400 50  0001 C CNN
+F 3 "" H 750 3400 50  0001 C CNN
+	1    750  3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 10600 4250
+Wire Wire Line
+	10600 4250 11000 4250
 $EndSCHEMATC
