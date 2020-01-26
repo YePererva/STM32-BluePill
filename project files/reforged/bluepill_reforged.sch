@@ -242,17 +242,6 @@ F 3 "" H 9000 1350 50  0001 C CNN
 	1    9000 1350
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:VBUS #PWR06
-U 1 1 5DED193B
-P 1700 1000
-F 0 "#PWR06" H 1700 850 50  0001 C CNN
-F 1 "VBUS" H 1715 1173 50  0000 C CNN
-F 2 "" H 1700 1000 50  0001 C CNN
-F 3 "" H 1700 1000 50  0001 C CNN
-	1    1700 1000
-	1    0    0    -1  
-$EndComp
 Connection ~ 9000 1000
 $Comp
 L power:GNDREF #PWR05
@@ -530,39 +519,6 @@ Wire Wire Line
 Connection ~ 2300 1350
 Text Notes 2600 700  0    100  Italic 20
 USB to serial (VCP)
-$Comp
-L power:+5V #PWR09
-U 1 1 5E127D96
-P 2300 1000
-F 0 "#PWR09" H 2300 850 50  0001 C CNN
-F 1 "+5V" H 2315 1173 50  0000 C CNN
-F 2 "" H 2300 1000 50  0001 C CNN
-F 3 "" H 2300 1000 50  0001 C CNN
-	1    2300 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Schottky_ALT D1
-U 1 1 5E12857D
-P 2000 1050
-F 0 "D1" H 2000 834 50  0000 C CNN
-F 1 "Protection" H 2000 925 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-128" H 2000 1050 50  0001 C CNN
-F 3 "~" H 2000 1050 50  0001 C CNN
-	1    2000 1050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2150 1050 2300 1050
-Wire Wire Line
-	1600 1050 1700 1050
-Wire Wire Line
-	1700 1000 1700 1050
-Connection ~ 1700 1050
-Wire Wire Line
-	1700 1050 1850 1050
-Wire Wire Line
-	2300 1000 2300 1050
 Wire Wire Line
 	2850 1550 2800 1550
 Wire Notes Line
@@ -1137,8 +1093,6 @@ Wire Wire Line
 Wire Wire Line
 	10550 4450 10550 4350
 Wire Wire Line
-	10550 4250 10600 4250
-Wire Wire Line
 	11000 4250 11000 4450
 Wire Wire Line
 	10600 4350 10550 4350
@@ -1462,7 +1416,61 @@ F 3 "" H 750 3400 50  0001 C CNN
 	1    750  3400
 	1    0    0    -1  
 $EndComp
-Connection ~ 10600 4250
 Wire Wire Line
-	10600 4250 11000 4250
+	10550 4250 11000 4250
+$Comp
+L power:VBUS #PWR06
+U 1 1 5DED193B
+P 1650 950
+F 0 "#PWR06" H 1650 800 50  0001 C CNN
+F 1 "VBUS" H 1665 1123 50  0000 C CNN
+F 2 "" H 1650 950 50  0001 C CNN
+F 3 "" H 1650 950 50  0001 C CNN
+	1    1650 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse F1
+U 1 1 5E2D46C7
+P 1850 1050
+F 0 "F1" V 1625 1050 50  0000 C CNN
+F 1 "1A" V 1716 1050 50  0000 C CNN
+F 2 "Fuse:Fuse_0805_2012Metric" H 1900 850 50  0001 L CNN
+F 3 "~" H 1850 1050 50  0001 C CNN
+	1    1850 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky_ALT D1
+U 1 1 5E12857D
+P 2150 1050
+F 0 "D1" H 2150 834 50  0000 C CNN
+F 1 "1A" H 2150 925 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-128" H 2150 1050 50  0001 C CNN
+F 3 "~" H 2150 1050 50  0001 C CNN
+	1    2150 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR09
+U 1 1 5E127D96
+P 2350 950
+F 0 "#PWR09" H 2350 800 50  0001 C CNN
+F 1 "+5V" H 2365 1123 50  0000 C CNN
+F 2 "" H 2350 950 50  0001 C CNN
+F 3 "" H 2350 950 50  0001 C CNN
+	1    2350 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1050 2350 1050
+Wire Wire Line
+	2350 1050 2350 950 
+Wire Wire Line
+	1700 1050 1650 1050
+Wire Wire Line
+	1650 950  1650 1050
+Connection ~ 1650 1050
+Wire Wire Line
+	1650 1050 1600 1050
 $EndSCHEMATC
