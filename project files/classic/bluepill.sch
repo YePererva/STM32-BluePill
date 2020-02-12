@@ -670,8 +670,8 @@ Wire Wire Line
 	5600 5800 5600 5750
 Text GLabel 5700 5350 2    50   Input ~ 0
 NRST
-Text Notes 4800 4350 0    50   ~ 0
-BluePill boards from TaoBao have diferent design:\n+ extra 1M or 10M resistor between OSCIN | OSCOUT \n- no GND connection for capacitors\nSame  concept can be found on some RedPill boards.\nRecommended design from STM has no resistor!\nIn this schematic it is OPTIONAL!\nBluePill uses crystal in HC-49S (HC-49-4H) package.\nBlackPill uses both: resistor (10M) and \ngrounding for capacitors.\nMapleMinu uses AMB3AIG-8.000MHZ [5.0mm x 3.2 mm]
+Text Notes 4800 4450 0    50   ~ 0
+BluePill boards from TaoBao have diferent design:\n+ extra 1M or 10M resistor between OSCIN | OSCOUT \n- no GND connection for capacitors\nSame  concept can be found on some RedPill boards.\nRecommended design from STM has no resistor!\nIn this schematic it is OPTIONAL!\nBluePill uses crystal in HC-49S (HC-49-4H) package.\nBlackPill uses both: resistor (10M) and \ngrounding for capacitors.\nMapleMini uses AMB3AIG-8.000MHZ [5.0mm x 3.2 mm]\nor ABMM2-8.000MHZ-E2-T -  [6mm x 3.6mm]
 $Comp
 L power:GNDREF #PWR019
 U 1 1 5DE9878B
