@@ -24,17 +24,6 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    7950 2550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Crystal Y1
-U 1 1 5DE0EDF5
-P 4650 2650
-F 0 "Y1" H 4650 2382 50  0000 C CNN
-F 1 "8MHz" H 4650 2473 50  0000 C CNN
-F 2 "Crystal:Crystal_HC49-4H_Vertical" H 4650 2650 50  0001 C CNN
-F 3 "~" H 4650 2650 50  0001 C CNN
-	1    4650 2650
-	-1   0    0    1   
-$EndComp
 Text Notes 5550 700  0    100  Italic 20
 Build-in LEDs
 $Comp
@@ -51,23 +40,23 @@ $EndComp
 $Comp
 L Device:C C4
 U 1 1 5DE3364B
-P 4450 2900
-F 0 "C4" H 4565 2946 50  0000 L CNN
-F 1 "20pF" H 4565 2855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4488 2750 50  0001 C CNN
-F 3 "~" H 4450 2900 50  0001 C CNN
-	1    4450 2900
+P 4350 2850
+F 0 "C4" H 4465 2896 50  0000 L CNN
+F 1 "20pF" H 4465 2805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4388 2700 50  0001 C CNN
+F 3 "~" H 4350 2850 50  0001 C CNN
+	1    4350 2850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C6
 U 1 1 5DE33802
-P 4850 2900
-F 0 "C6" H 4965 2946 50  0000 L CNN
-F 1 "20pF" H 4965 2855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4888 2750 50  0001 C CNN
-F 3 "~" H 4850 2900 50  0001 C CNN
-	1    4850 2900
+P 5050 2850
+F 0 "C6" H 5165 2896 50  0000 L CNN
+F 1 "20pF" H 5165 2805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5088 2700 50  0001 C CNN
+F 3 "~" H 5050 2850 50  0001 C CNN
+	1    5050 2850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -104,17 +93,6 @@ Wire Wire Line
 	5000 1150 5050 1150
 Wire Wire Line
 	5050 1150 5050 1250
-Wire Wire Line
-	4450 2750 4450 2650
-Wire Wire Line
-	4500 2650 4450 2650
-Wire Wire Line
-	4800 2650 4850 2650
-Wire Wire Line
-	4850 2650 4850 2750
-Connection ~ 4850 2650
-Wire Wire Line
-	4850 2650 5000 2650
 $Comp
 L Device:R R3
 U 1 1 5DE800CD
@@ -151,23 +129,23 @@ $EndComp
 $Comp
 L power:GNDREF #PWR016
 U 1 1 5DE9A513
-P 4450 3050
-F 0 "#PWR016" H 4450 2800 50  0001 C CNN
-F 1 "GNDREF" H 4455 2877 50  0000 C CNN
-F 2 "" H 4450 3050 50  0001 C CNN
-F 3 "" H 4450 3050 50  0001 C CNN
-	1    4450 3050
+P 4350 3000
+F 0 "#PWR016" H 4350 2750 50  0001 C CNN
+F 1 "GNDREF" H 4355 2827 50  0000 C CNN
+F 2 "" H 4350 3000 50  0001 C CNN
+F 3 "" H 4350 3000 50  0001 C CNN
+	1    4350 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDREF #PWR018
 U 1 1 5DE9A892
-P 4850 3050
-F 0 "#PWR018" H 4850 2800 50  0001 C CNN
-F 1 "GNDREF" H 4855 2877 50  0000 C CNN
-F 2 "" H 4850 3050 50  0001 C CNN
-F 3 "" H 4850 3050 50  0001 C CNN
-	1    4850 3050
+P 5050 3000
+F 0 "#PWR018" H 5050 2750 50  0001 C CNN
+F 1 "GNDREF" H 5055 2827 50  0000 C CNN
+F 2 "" H 5050 3000 50  0001 C CNN
+F 3 "" H 5050 3000 50  0001 C CNN
+	1    5050 3000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -438,7 +416,7 @@ L Device:Crystal_GND23 Y2
 U 1 1 5E0FCA9B
 P 4850 1150
 F 0 "Y2" H 5044 1196 50  0000 L CNN
-F 1 "32768Hz" H 5044 1105 50  0000 L CNN
+F 1 "MC-306, 32768Hz" H 4700 1400 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_SeikoEpson_MC306-4Pin_8.0x3.2mm" H 4850 1150 50  0001 C CNN
 F 3 "~" H 4850 1150 50  0001 C CNN
 	1    4850 1150
@@ -645,7 +623,6 @@ Wire Wire Line
 Connection ~ 3600 2350
 Text GLabel 7250 2550 0    50   Input ~ 0
 BOOT1
-Connection ~ 4450 2650
 Wire Wire Line
 	4650 1150 4650 800 
 Wire Wire Line
@@ -709,9 +686,9 @@ Wire Wire Line
 	5750 1150 5700 1150
 Text GLabel 7250 1250 0    50   Input ~ 0
 NRST
-Text GLabel 5000 2250 2    50   Input ~ 0
+Text GLabel 5100 2250 2    50   Input ~ 0
 OSCIN
-Text GLabel 5000 2650 2    50   Input ~ 0
+Text GLabel 5100 2650 2    50   Input ~ 0
 OSCOUT
 Text GLabel 7250 1650 0    50   Input ~ 0
 OSCIN
@@ -869,25 +846,14 @@ Microcontroller core
 $Comp
 L Device:R R8
 U 1 1 5E527ACB
-P 4850 2450
-F 0 "R8" H 4920 2496 50  0000 L CNN
-F 1 "10M [N/A]" H 4920 2405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4780 2450 50  0001 C CNN
-F 3 "~" H 4850 2450 50  0001 C CNN
-	1    4850 2450
+P 5050 2450
+F 0 "R8" H 5120 2496 50  0000 L CNN
+F 1 "10M[N/A]" H 5120 2405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4980 2450 50  0001 C CNN
+F 3 "~" H 5050 2450 50  0001 C CNN
+	1    5050 2450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5000 2250 4850 2250
-Wire Wire Line
-	4450 2250 4450 2650
-Wire Wire Line
-	4850 2300 4850 2250
-Connection ~ 4850 2250
-Wire Wire Line
-	4850 2250 4450 2250
-Wire Wire Line
-	4850 2600 4850 2650
 Text GLabel 8550 2350 2    50   Input ~ 0
 PA0
 Text GLabel 7250 2650 0    50   Input ~ 0
@@ -1473,4 +1439,62 @@ Wire Wire Line
 Connection ~ 1650 1050
 Wire Wire Line
 	1650 1050 1600 1050
+$Comp
+L Device:Crystal_GND24 Y1
+U 1 1 5E68257B
+P 4700 2650
+F 0 "Y1" H 4500 2850 50  0000 L CNN
+F 1 "8Mhz,TSX-3225" H 4400 2950 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 4700 2650 50  0001 C CNN
+F 3 "~" H 4700 2650 50  0001 C CNN
+	1    4700 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0101
+U 1 1 5E6B7D98
+P 4700 3000
+F 0 "#PWR0101" H 4700 2750 50  0001 C CNN
+F 1 "GNDREF" H 4705 2827 50  0000 C CNN
+F 2 "" H 4700 3000 50  0001 C CNN
+F 3 "" H 4700 3000 50  0001 C CNN
+	1    4700 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2650 4350 2650
+Wire Wire Line
+	4350 2650 4350 2250
+Wire Wire Line
+	4850 2650 5050 2650
+Wire Wire Line
+	4350 2250 5050 2250
+Wire Wire Line
+	5050 2300 5050 2250
+Connection ~ 5050 2250
+Wire Wire Line
+	5050 2250 5100 2250
+Wire Wire Line
+	5050 2600 5050 2650
+Connection ~ 5050 2650
+Wire Wire Line
+	5050 2650 5100 2650
+Wire Wire Line
+	4700 3000 4700 2900
+Wire Wire Line
+	5050 2700 5050 2650
+Wire Wire Line
+	4350 2700 4350 2650
+Connection ~ 4350 2650
+Wire Wire Line
+	4700 2450 4700 2400
+Wire Wire Line
+	4700 2400 4900 2400
+Wire Wire Line
+	4900 2400 4900 2900
+Wire Wire Line
+	4900 2900 4700 2900
+Connection ~ 4700 2900
+Wire Wire Line
+	4700 2900 4700 2850
 $EndSCHEMATC
