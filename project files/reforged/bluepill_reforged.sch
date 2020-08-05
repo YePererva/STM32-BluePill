@@ -199,17 +199,6 @@ F 3 "~" H 1700 6250 50  0001 C CNN
 	1    1700 6250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Regulator_Linear:AMS1117-3.3 U1
-U 1 1 5E0AB632
-P 1300 5950
-F 0 "U1" H 1300 6192 50  0000 C CNN
-F 1 "AMS1117-3.3" H 1300 6101 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 1300 6150 50  0001 C CNN
-F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 1400 5700 50  0001 C CNN
-	1    1300 5950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1700 6100 1700 5950
 Wire Wire Line
@@ -757,17 +746,6 @@ PB13
 Text GLabel 9900 4350 2    50   Input ~ 0
 PB12
 $Comp
-L Connector_Generic:Conn_01x20 J2
-U 1 1 5DEFD8E5
-P 9700 5350
-F 0 "J2" H 9700 4150 50  0000 C CNN
-F 1 "Left Castellation" H 9700 4200 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 9700 5350 50  0001 C CNN
-F 3 "~" H 9700 5350 50  0001 C CNN
-	1    9700 5350
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+5V #PWR035
 U 1 1 5E5BBA7B
 P 10200 5950
@@ -782,19 +760,6 @@ Wire Wire Line
 	9900 6050 10200 6050
 Wire Wire Line
 	10200 6050 10200 5950
-$Comp
-L power:+3.3V #PWR032
-U 1 1 5E5CAD12
-P 9450 6250
-F 0 "#PWR032" H 9450 6100 50  0001 C CNN
-F 1 "+3.3V" H 9465 6423 50  0000 C CNN
-F 2 "" H 9450 6250 50  0001 C CNN
-F 3 "" H 9450 6250 50  0001 C CNN
-	1    9450 6250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9900 6250 10000 6250
 $Comp
 L power:+3.3V #PWR039
 U 1 1 5E5D19A3
@@ -821,12 +786,6 @@ Wire Wire Line
 Connection ~ 10550 4350
 Wire Wire Line
 	10550 4350 10550 4250
-Wire Wire Line
-	10000 6250 10000 6350
-Wire Wire Line
-	10000 6350 9450 6350
-Wire Wire Line
-	9450 6250 9450 6350
 Text GLabel 9250 2600 0    50   Input ~ 0
 SWO
 Text GLabel 9400 2600 2    50   Input ~ 0
@@ -1140,17 +1099,6 @@ Wire Wire Line
 Connection ~ 1650 1050
 Wire Wire Line
 	1650 1050 1600 1050
-$Comp
-L Device:Crystal_GND24 Y1
-U 1 1 5E68257B
-P 4700 2650
-F 0 "Y1" H 4500 2850 50  0000 L CNN
-F 1 "8Mhz,TSX-3225" H 4400 2950 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 4700 2650 50  0001 C CNN
-F 3 "~" H 4700 2650 50  0001 C CNN
-	1    4700 2650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4550 2650 4350 2650
 Wire Wire Line
@@ -1170,23 +1118,10 @@ Connection ~ 5050 2650
 Wire Wire Line
 	5050 2650 5100 2650
 Wire Wire Line
-	4700 3000 4700 2900
-Wire Wire Line
 	5050 2700 5050 2650
 Wire Wire Line
 	4350 2700 4350 2650
 Connection ~ 4350 2650
-Wire Wire Line
-	4700 2450 4700 2400
-Wire Wire Line
-	4700 2400 4900 2400
-Wire Wire Line
-	4900 2400 4900 2900
-Wire Wire Line
-	4900 2900 4700 2900
-Connection ~ 4700 2900
-Wire Wire Line
-	4700 2900 4700 2850
 $Comp
 L power:VBUS #PWR0102
 U 1 1 5E900920
@@ -1284,17 +1219,6 @@ F 1 "GNDD" H 4354 2845 50  0000 C CNN
 F 2 "" H 4350 3000 50  0001 C CNN
 F 3 "" H 4350 3000 50  0001 C CNN
 	1    4350 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDD #PWR0110
-U 1 1 5E9062A7
-P 4700 3000
-F 0 "#PWR0110" H 4700 2750 50  0001 C CNN
-F 1 "GNDD" H 4704 2845 50  0000 C CNN
-F 2 "" H 4700 3000 50  0001 C CNN
-F 3 "" H 4700 3000 50  0001 C CNN
-	1    4700 3000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1499,4 +1423,149 @@ Wire Wire Line
 	9900 6150 10200 6150
 Wire Wire Line
 	10200 6150 10200 6300
+$Comp
+L Connector_Generic:Conn_02x07_Odd_Even J5
+U 1 1 5F2A0D58
+P 6000 7200
+F 0 "J5" H 6050 7717 50  0000 C CNN
+F 1 "STDC14" H 6050 7626 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x07_P1.27mm_Vertical" H 6000 7200 50  0001 C CNN
+F 3 "~" H 6000 7200 50  0001 C CNN
+	1    6000 7200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5800 6900
+NoConn ~ 6300 6900
+Text GLabel 6300 7100 2    50   Input ~ 0
+SWCLK
+Text GLabel 6300 7400 2    50   Input ~ 0
+NRST
+Text GLabel 6300 7000 2    50   Input ~ 0
+SWDIO
+$Comp
+L power:+3.3V #PWR0110
+U 1 1 5F2A0D63
+P 5400 6800
+F 0 "#PWR0110" H 5400 6650 50  0001 C CNN
+F 1 "+3.3V" H 5415 6928 50  0000 L CNN
+F 2 "" H 5400 6800 50  0001 C CNN
+F 3 "" H 5400 6800 50  0001 C CNN
+	1    5400 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 7000 5400 7000
+Wire Wire Line
+	5400 7000 5400 6800
+Text GLabel 6300 7200 2    50   Input ~ 0
+SWO
+NoConn ~ 6300 7300
+NoConn ~ 5800 7300
+Wire Wire Line
+	5800 7100 5700 7100
+Wire Wire Line
+	5700 7100 5700 7200
+Wire Wire Line
+	5700 7200 5800 7200
+Wire Wire Line
+	5800 7400 5700 7400
+Wire Wire Line
+	5700 7400 5700 7200
+Connection ~ 5700 7200
+Wire Wire Line
+	5700 7100 5400 7100
+Wire Wire Line
+	5400 7100 5400 7200
+Connection ~ 5700 7100
+Text GLabel 6300 7500 2    50   Output ~ 0
+TX
+Text GLabel 5800 7500 0    50   Input ~ 0
+RX
+$Comp
+L power:GNDD #PWR0129
+U 1 1 5F2A0D79
+P 5400 7200
+F 0 "#PWR0129" H 5400 6950 50  0001 C CNN
+F 1 "GNDD" H 5404 7045 50  0000 C CNN
+F 2 "" H 5400 7200 50  0001 C CNN
+F 3 "" H 5400 7200 50  0001 C CNN
+	1    5400 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal_GND24 Y1
+U 1 1 5F2F82E0
+P 4700 2650
+F 0 "Y1" H 4400 2950 50  0000 L CNN
+F 1 "8MHz" H 4400 2850 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_TXC_7M-4Pin_3.2x2.5mm" H 4700 2650 50  0001 C CNN
+F 3 "~" H 4700 2650 50  0001 C CNN
+	1    4700 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2850 4700 2900
+Wire Wire Line
+	4700 2900 4900 2900
+Wire Wire Line
+	4900 2900 4900 2400
+Wire Wire Line
+	4900 2400 4700 2400
+Wire Wire Line
+	4700 2400 4700 2450
+Connection ~ 4700 2900
+$Comp
+L power:GNDD #PWR0130
+U 1 1 5F3045BA
+P 4700 3000
+F 0 "#PWR0130" H 4700 2750 50  0001 C CNN
+F 1 "GNDD" H 4704 2845 50  0000 C CNN
+F 2 "" H 4700 3000 50  0001 C CNN
+F 3 "" H 4700 3000 50  0001 C CNN
+	1    4700 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2900 4700 3000
+Wire Wire Line
+	9900 6250 10000 6250
+Wire Wire Line
+	10000 6250 10000 6350
+$Comp
+L Connector_Generic:Conn_01x20 J2
+U 1 1 5DEFD8E5
+P 9700 5350
+F 0 "J2" H 9700 4150 50  0000 C CNN
+F 1 "Left Castellation" H 9700 4200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 9700 5350 50  0001 C CNN
+F 3 "~" H 9700 5350 50  0001 C CNN
+	1    9700 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9450 6250 9450 6350
+Wire Wire Line
+	10000 6350 9450 6350
+$Comp
+L power:+3.3V #PWR032
+U 1 1 5E5CAD12
+P 9450 6250
+F 0 "#PWR032" H 9450 6100 50  0001 C CNN
+F 1 "+3.3V" H 9465 6423 50  0000 C CNN
+F 2 "" H 9450 6250 50  0001 C CNN
+F 3 "" H 9450 6250 50  0001 C CNN
+	1    9450 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:AMS1117-3.3 U1
+U 1 1 5F294175
+P 1300 5950
+F 0 "U1" H 1300 6192 50  0000 C CNN
+F 1 "AMS1117-3.3" H 1300 6101 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 1300 6150 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 1400 5700 50  0001 C CNN
+	1    1300 5950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
