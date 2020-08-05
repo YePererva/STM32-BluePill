@@ -867,17 +867,6 @@ NRST
 Text Notes 5600 2150 0    100  Italic 20
 Reset Circuit
 $Comp
-L Switch:SW_Push SW2
-U 1 1 5DE262D4
-P 5800 3000
-F 0 "SW2" V 5846 2952 50  0000 R CNN
-F 1 "Reset" V 5755 2952 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 5800 3200 50  0001 C CNN
-F 3 "~" H 5800 3200 50  0001 C CNN
-	1    5800 3000
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:C C8
 U 1 1 5DE25D99
 P 6200 3000
@@ -1567,5 +1556,16 @@ F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 1300 6150 50  0001 C CNN
 F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 1400 5700 50  0001 C CNN
 	1    1300 5950
 	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5DE262D4
+P 5800 3000
+F 0 "SW2" V 5846 2952 50  0000 R CNN
+F 1 "Reset" V 5755 2952 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 5800 3200 50  0001 C CNN
+F 3 "~" H 5800 3200 50  0001 C CNN
+	1    5800 3000
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
