@@ -41,7 +41,7 @@ U 1 1 5DE0F7EB
 P 10100 3100
 F 0 "J4" H 10180 3092 50  0000 L CNN
 F 1 "SWD" H 10180 3001 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 10100 3100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 10100 3100 50  0001 C CNN
 F 3 "~" H 10100 3100 50  0001 C CNN
 	1    10100 3100
 	1    0    0    1   
@@ -391,12 +391,12 @@ USB to serial (VCP)
 $Comp
 L power:+5V #PWR07
 U 1 1 5E127D96
-P 2150 1100
-F 0 "#PWR07" H 2150 950 50  0001 C CNN
-F 1 "+5V" H 2165 1273 50  0000 C CNN
-F 2 "" H 2150 1100 50  0001 C CNN
-F 3 "" H 2150 1100 50  0001 C CNN
-	1    2150 1100
+P 1750 1100
+F 0 "#PWR07" H 1750 950 50  0001 C CNN
+F 1 "+5V" H 1765 1273 50  0000 C CNN
+F 2 "" H 1750 1100 50  0001 C CNN
+F 3 "" H 1750 1100 50  0001 C CNN
+	1    1750 1100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -651,10 +651,6 @@ Wire Wire Line
 Text Notes 9200 2600 0    100  Italic 20
 SWD interface
 Wire Wire Line
-	7850 900  7850 1050
-Text Notes 6500 4750 0    100  Italic 20
-RTC Power Protection
-Wire Wire Line
 	5600 5350 5700 5350
 Connection ~ 5600 5350
 Wire Wire Line
@@ -860,17 +856,6 @@ Connection ~ 1500 5600
 Wire Wire Line
 	1950 6050 1950 6000
 $Comp
-L power:VBUS #PWR02
-U 1 1 5DED193B
-P 1350 1100
-F 0 "#PWR02" H 1350 950 50  0001 C CNN
-F 1 "VBUS" H 1365 1273 50  0000 C CNN
-F 2 "" H 1350 1100 50  0001 C CNN
-F 3 "" H 1350 1100 50  0001 C CNN
-	1    1350 1100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R1
 U 1 1 5E16EBE8
 P 3200 2950
@@ -989,8 +974,6 @@ F 3 "~" H 1750 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 1150 1350 1150
-Wire Wire Line
 	1750 1350 1750 1150
 $Comp
 L power:GNDREF #PWR05
@@ -1005,97 +988,10 @@ F 3 "" H 1750 1850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1750 1850 1750 1650
-Text Notes 6550 6500 0    50   ~ 0
-Typically used diodes:\n- 1N5819: in SOD123F or DO-41\n- LSM115JE3/TR13 : DO-214BA\n- BAS70 : in SOT23\n- 1N4448 : in SOD123\n- BAT54C : in SOT-23 : WeAct F4x1 DevBoards
 Text Notes 800  6700 0    50   ~ 0
 Some clones uses AMS1117 as Linear Voltage Regulator\nwith tantalum SMD capacitors:\n- Pre-capacitor: 7343 Metric Package : \n- Post-capacitor: 7343 Metric Package :
-Text Notes 6550 6000 0    50   ~ 0
-Not Present on original BluePill.\nHighly recomended.
-$Comp
-L Device:D_Schottky D1
-U 1 1 5E178BE9
-P 1900 1150
-F 0 "D1" H 1900 934 50  0000 C CNN
-F 1 "SD103AWS" H 1900 1025 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323" H 1900 1150 50  0001 C CNN
-F 3 "~" H 1900 1150 50  0001 C CNN
-	1    1900 1150
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	2050 1150 2150 1150
-Wire Wire Line
-	2150 1150 2150 1100
-Wire Wire Line
-	1350 1100 1350 1150
-Text GLabel 7900 900  2    50   Input ~ 0
-Vbat_protected
-Wire Wire Line
-	7900 900  7850 900 
-Text GLabel 7000 5300 2    50   Input ~ 0
-Vbat_protected
-$Comp
-L Diode:BAT54C D4
-U 1 1 5E189BAD
-P 6900 5100
-F 0 "D4" H 6900 5325 50  0000 C CNN
-F 1 "BAT54C" H 6900 5234 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6975 5225 50  0001 L CNN
-F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 6820 5100 50  0001 C CNN
-	1    6900 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C10
-U 1 1 5E18C388
-P 6900 5450
-F 0 "C10" H 7015 5496 50  0000 L CNN
-F 1 "100n" H 7015 5405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6938 5300 50  0001 C CNN
-F 3 "~" H 6900 5450 50  0001 C CNN
-	1    6900 5450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7000 5300 6900 5300
-Connection ~ 6900 5300
-$Comp
-L power:GNDREF #PWR026
-U 1 1 5E195578
-P 6900 5600
-F 0 "#PWR026" H 6900 5350 50  0001 C CNN
-F 1 "GNDREF" H 6905 5427 50  0000 C CNN
-F 2 "" H 6900 5600 50  0001 C CNN
-F 3 "" H 6900 5600 50  0001 C CNN
-	1    6900 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+BATT #PWR025
-U 1 1 5E19686F
-P 6600 5000
-F 0 "#PWR025" H 6600 4850 50  0001 C CNN
-F 1 "+BATT" H 6615 5173 50  0000 C CNN
-F 2 "" H 6600 5000 50  0001 C CNN
-F 3 "" H 6600 5000 50  0001 C CNN
-	1    6600 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR027
-U 1 1 5E1982AA
-P 7200 5000
-F 0 "#PWR027" H 7200 4850 50  0001 C CNN
-F 1 "+3.3V" H 7215 5173 50  0000 C CNN
-F 2 "" H 7200 5000 50  0001 C CNN
-F 3 "" H 7200 5000 50  0001 C CNN
-	1    7200 5000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7200 5100 7200 5000
-Wire Wire Line
-	6600 5100 6600 5000
+	1750 1150 1750 1100
 Text Notes 700  3900 0    50   ~ 0
 Another suggestion is to use polymer resettable fuse like:\n- case 1210 (inch) : from Samsung Tab batteries\n- case 1206 : typically used on ST-Link clones
 Text Notes 5100 7900 0    50   ~ 0
@@ -1368,21 +1264,57 @@ Wire Wire Line
 Connection ~ 10050 6500
 Wire Wire Line
 	10050 6550 10050 6500
-$Comp
-L Device:Polyfuse F1
-U 1 1 5E2A26EB
-P 1550 1150
-F 0 "F1" V 1325 1150 50  0000 C CNN
-F 1 "500mA" V 1416 1150 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" H 1600 950 50  0001 L CNN
-F 3 "~" H 1550 1150 50  0001 C CNN
-	1    1550 1150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1700 1150 1750 1150
 Connection ~ 1750 1150
+$Comp
+L power:+BATT #PWR025
+U 1 1 5E19686F
+P 8350 4800
+F 0 "#PWR025" H 8350 4650 50  0001 C CNN
+F 1 "+BATT" H 8365 4973 50  0000 C CNN
+F 2 "" H 8350 4800 50  0001 C CNN
+F 3 "" H 8350 4800 50  0001 C CNN
+	1    8350 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR026
+U 1 1 5E195578
+P 8350 5100
+F 0 "#PWR026" H 8350 4850 50  0001 C CNN
+F 1 "GNDREF" H 8355 4927 50  0000 C CNN
+F 2 "" H 8350 5100 50  0001 C CNN
+F 3 "" H 8350 5100 50  0001 C CNN
+	1    8350 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5E18C388
+P 8350 4950
+F 0 "C10" H 8465 4996 50  0000 L CNN
+F 1 "100n" H 8465 4905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8388 4800 50  0001 C CNN
+F 3 "~" H 8350 4950 50  0001 C CNN
+	1    8350 4950
+	1    0    0    -1  
+$EndComp
+Text Notes 6550 6000 0    50   ~ 0
+The protection is not present on original BluePill.\nHighly recomended to add dioded to merge \nVbat and 3.3V for VBAT pin of uC.
+Text Notes 6550 6500 0    50   ~ 0
+Typically used diodes:\n- 1N5819: in SOD123F or DO-41\n- LSM115JE3/TR13 : DO-214BA\n- BAS70 : in SOT23\n- 1N4448 : in SOD123\n- BAT54C : in SOT-23 : WeAct F4x1 DevBoards
+Text Notes 6550 5750 0    100  Italic 20
+RTC Power Protection
 Wire Wire Line
-	1400 1150 1350 1150
-Connection ~ 1350 1150
+	1250 1150 1750 1150
+$Comp
+L power:+BATT #PWR0101
+U 1 1 5F93A6DF
+P 7850 1050
+F 0 "#PWR0101" H 7850 900 50  0001 C CNN
+F 1 "+BATT" H 7865 1223 50  0000 C CNN
+F 2 "" H 7850 1050 50  0001 C CNN
+F 3 "" H 7850 1050 50  0001 C CNN
+	1    7850 1050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
