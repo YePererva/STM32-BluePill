@@ -1,16 +1,10 @@
 # BluePill with USB type C
 
-**NB! :** This a Work In Progress project.
+**NB! :** This a Work In Progress repository.
 
 Here, I wanted to made a modification of the highly popular [STM32F103C8T6](https://www.st.com/resource/en/datasheet/stm32f103c8.pdf) development board, widely referred as [BluePill](https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill.html).
 
-## What is inside the repository
-- `project files` : folder with BluePill projects, implemented in KiCAD
-  - `classic` : the "traditional" BluePill board, with some schematic fixes (wrong resistor value for USB pull-up, extra capacitor, etc.) and some "cosmetic" changes on board.
-  - `reforged` : the board with fixes and functionality I want to add
-- `references` : some references of schematics / issues / layouts I found for various
-
-## What I want(ed) to change
+The changes, I want(ed) to implement are:
 - replace the micro-USB slot with USB type C connector
 - replace the 4-pin SWD programming connector with STDC-14 connector for compatibility with [ST-Link V3 mini](https://www.st.com/en/development-tools/stlink-v3mini.html) programmer
   - It should be compatible with 10-pin ARM cortex programming connector
@@ -22,9 +16,13 @@ Here, I wanted to made a modification of the highly popular [STM32F103C8T6](http
 - add a option to use microcontroller not only in LQFP48 package, but UFQFPN48 package (alike STM32F103CBU6)
 - Replace the Power regulator. Originally it uses either [RT9193-33](https://web.archive.org/web/20190316155227/http://wiki.stm32duino.com/index.php?title=Blue_Pill) or [TX6211B](https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill) which are documented as < 300 mA power supply, but can overheat if used >100 mA.
 
-## What I want to keep
-- Full pinout compatibility with original BluePill
-- Final size of board
+With all of that, I also want to keep pinout compatibility with original BluePill and the final size of board
+
+## What is inside the repository
+- `project files` : folder with BluePill projects, implemented in KiCAD
+  - `classic` : the "traditional" BluePill board, with some schematic fixes (wrong resistor value for USB pull-up, extra capacitor, etc.) and some "cosmetic" changes on board.
+  - `reforged` : the board with fixes and functionality I want to add
+- `references` : some references of schematics / issues / layouts I found for various
 
 ## Why I want to do it
 - I want to practice with KiCAD
