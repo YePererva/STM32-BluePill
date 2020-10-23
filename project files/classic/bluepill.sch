@@ -792,7 +792,7 @@ U 1 1 5E119CEC
 P 1500 5900
 F 0 "C1" H 1385 5854 50  0000 R CNN
 F 1 "1u" H 1385 5945 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1538 5750 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Wuerth_629105150521" H 1538 5750 50  0001 C CNN
 F 3 "~" H 1500 5900 50  0001 C CNN
 	1    1500 5900
 	-1   0    0    1   
@@ -931,17 +931,6 @@ F 3 "~" H 3550 2950 50  0001 C CNN
 $EndComp
 Text Notes 5000 6500 0    50   ~ 0
 Originally, button should \nbe in TL3342 package.\nOther clones utilizese:\n- FSMSM Package\n- RS282G05A3\n- B3U-1000P (-B) : MapleMini
-$Comp
-L Connector:USB_B_Micro J1
-U 1 1 5E11829C
-P 950 1350
-F 0 "J1" H 1007 1817 50  0000 C CNN
-F 1 "USB_B_Micro" H 1007 1726 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Wuerth_629105150521" H 1100 1300 50  0001 C CNN
-F 3 "~" H 1100 1300 50  0001 C CNN
-	1    950  1350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1250 1450 1400 1450
 Wire Wire Line
@@ -1315,6 +1304,17 @@ F 1 "+BATT" H 7865 1223 50  0000 C CNN
 F 2 "" H 7850 1050 50  0001 C CNN
 F 3 "" H 7850 1050 50  0001 C CNN
 	1    7850 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 5F92DE1E
+P 950 1350
+F 0 "J1" H 1007 1817 50  0000 C CNN
+F 1 "USB_B_Micro" H 1007 1726 50  0000 C CNN
+F 2 "" H 1100 1300 50  0001 C CNN
+F 3 "~" H 1100 1300 50  0001 C CNN
+	1    950  1350
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

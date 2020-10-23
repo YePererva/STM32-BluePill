@@ -218,7 +218,7 @@ Among Linear Voltage Regulators good option is AMS1117-3.3 (SOT223).\nIt can del
 Text Notes 650  7350 0    50   ~ 0
 Other effective low-drop linear regulators are:\nTI LM3940, up to 1A, but isincompatible in pinout\nLMS8117AMP3.3\n
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J1
+L bluepill_reforged-rescue:USB_C_Receptacle_USB2.0-Connector J1
 U 1 1 5E12D596
 P 1000 1650
 F 0 "J1" H 1107 2517 50  0000 C CNN
