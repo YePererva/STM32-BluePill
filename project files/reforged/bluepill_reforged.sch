@@ -790,7 +790,7 @@ Text GLabel 9250 2600 0    50   Input ~ 0
 SWO
 Text GLabel 9400 2600 2    50   Input ~ 0
 PB3
-Text Notes 9600 2150 0    100  Italic 20
+Text Notes 3900 5750 0    100  Italic 20
 STDC14 interface
 $Comp
 L power:+BATT #PWR040
@@ -939,64 +939,6 @@ F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 7770 5350 50  0001 C
 	1    0    0    -1  
 $EndComp
 Connection ~ 7850 5550
-$Comp
-L Connector_Generic:Conn_02x07_Odd_Even J3
-U 1 1 5E19328C
-P 10500 2900
-F 0 "J3" H 10550 3417 50  0000 C CNN
-F 1 "STDC14" H 10550 3326 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x07_P1.27mm_Vertical_SMD" H 10500 2900 50  0001 C CNN
-F 3 "~" H 10500 2900 50  0001 C CNN
-	1    10500 2900
-	1    0    0    -1  
-$EndComp
-NoConn ~ 10300 2600
-NoConn ~ 10800 2600
-Text GLabel 10800 2800 2    50   Input ~ 0
-SWCLK
-Text GLabel 10800 3100 2    50   Input ~ 0
-NRST
-Text GLabel 10800 2700 2    50   Input ~ 0
-SWDIO
-$Comp
-L power:+3.3V #PWR037
-U 1 1 5E1A21E5
-P 9900 2500
-F 0 "#PWR037" H 9900 2350 50  0001 C CNN
-F 1 "+3.3V" H 9915 2628 50  0000 L CNN
-F 2 "" H 9900 2500 50  0001 C CNN
-F 3 "" H 9900 2500 50  0001 C CNN
-	1    9900 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10300 2700 9900 2700
-Wire Wire Line
-	9900 2700 9900 2500
-Text GLabel 10800 2900 2    50   Input ~ 0
-SWO
-NoConn ~ 10800 3000
-NoConn ~ 10300 3000
-Wire Wire Line
-	10300 2800 10200 2800
-Wire Wire Line
-	10200 2800 10200 2900
-Wire Wire Line
-	10200 2900 10300 2900
-Wire Wire Line
-	10300 3100 10200 3100
-Wire Wire Line
-	10200 3100 10200 2900
-Connection ~ 10200 2900
-Wire Wire Line
-	10200 2800 9900 2800
-Wire Wire Line
-	9900 2800 9900 2900
-Connection ~ 10200 2800
-Text GLabel 10800 3200 2    50   Output ~ 0
-TX
-Text GLabel 10300 3200 0    50   Input ~ 0
-RX
 Text GLabel 9250 2900 0    50   Input ~ 0
 RX
 Text GLabel 9250 3000 0    50   Output ~ 0
@@ -1277,17 +1219,6 @@ F 3 "" H 4650 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR0117
-U 1 1 5E9096B4
-P 9900 2900
-F 0 "#PWR0117" H 9900 2650 50  0001 C CNN
-F 1 "GNDD" H 9904 2745 50  0000 C CNN
-F 2 "" H 9900 2900 50  0001 C CNN
-F 3 "" H 9900 2900 50  0001 C CNN
-	1    9900 2900
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GNDD #PWR0118
 U 1 1 5E909F75
 P 8600 1350
@@ -1412,75 +1343,18 @@ Wire Wire Line
 	9900 6150 10200 6150
 Wire Wire Line
 	10200 6150 10200 6300
-$Comp
-L Connector_Generic:Conn_02x07_Odd_Even J5
-U 1 1 5F2A0D58
-P 6000 7200
-F 0 "J5" H 6050 7717 50  0000 C CNN
-F 1 "STDC14" H 6050 7626 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x07_P1.27mm_Vertical" H 6000 7200 50  0001 C CNN
-F 3 "~" H 6000 7200 50  0001 C CNN
-	1    6000 7200
-	1    0    0    -1  
-$EndComp
-NoConn ~ 5800 6900
-NoConn ~ 6300 6900
-Text GLabel 6300 7100 2    50   Input ~ 0
+Text GLabel 6600 6450 2    50   Input ~ 0
 SWCLK
-Text GLabel 6300 7400 2    50   Input ~ 0
+Text GLabel 6600 6250 2    50   Input ~ 0
 NRST
-Text GLabel 6300 7000 2    50   Input ~ 0
+Text GLabel 6600 6550 2    50   Input ~ 0
 SWDIO
-$Comp
-L power:+3.3V #PWR0110
-U 1 1 5F2A0D63
-P 5400 6800
-F 0 "#PWR0110" H 5400 6650 50  0001 C CNN
-F 1 "+3.3V" H 5415 6928 50  0000 L CNN
-F 2 "" H 5400 6800 50  0001 C CNN
-F 3 "" H 5400 6800 50  0001 C CNN
-	1    5400 6800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 7000 5400 7000
-Wire Wire Line
-	5400 7000 5400 6800
-Text GLabel 6300 7200 2    50   Input ~ 0
+Text GLabel 6600 6650 2    50   Input ~ 0
 SWO
-NoConn ~ 6300 7300
-NoConn ~ 5800 7300
-Wire Wire Line
-	5800 7100 5700 7100
-Wire Wire Line
-	5700 7100 5700 7200
-Wire Wire Line
-	5700 7200 5800 7200
-Wire Wire Line
-	5800 7400 5700 7400
-Wire Wire Line
-	5700 7400 5700 7200
-Connection ~ 5700 7200
-Wire Wire Line
-	5700 7100 5400 7100
-Wire Wire Line
-	5400 7100 5400 7200
-Connection ~ 5700 7100
-Text GLabel 6300 7500 2    50   Output ~ 0
+Text GLabel 6600 7250 2    50   Output ~ 0
 TX
-Text GLabel 5800 7500 0    50   Input ~ 0
+Text GLabel 6600 7150 2    50   Input ~ 0
 RX
-$Comp
-L power:GNDD #PWR0129
-U 1 1 5F2A0D79
-P 5400 7200
-F 0 "#PWR0129" H 5400 6950 50  0001 C CNN
-F 1 "GNDD" H 5404 7045 50  0000 C CNN
-F 2 "" H 5400 7200 50  0001 C CNN
-F 3 "" H 5400 7200 50  0001 C CNN
-	1    5400 7200
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:Crystal_GND24 Y1
 U 1 1 5F2F82E0
@@ -1568,4 +1442,104 @@ F 3 "~" H 5800 3200 50  0001 C CNN
 	1    5800 3000
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Connector:Conn_ST_STDC14 J?
+U 1 1 5F95D9CB
+P 6100 6750
+F 0 "J?" H 5656 6796 50  0000 R CNN
+F 1 "STDC14-SMD" H 5656 6705 50  0000 R CNN
+F 2 "" H 6100 6750 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/user_manual/group1/99/49/91/b6/b2/3a/46/e5/DM00526767/files/DM00526767.pdf/jcr:content/translations/en.DM00526767.pdf" V 5750 5500 50  0001 C CNN
+	1    6100 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 7450 6100 7500
+Wire Wire Line
+	6100 7500 6000 7500
+Wire Wire Line
+	6000 7500 6000 7450
+Wire Wire Line
+	6100 7500 6100 7550
+Connection ~ 6100 7500
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F96AFF5
+P 6100 6050
+F 0 "#PWR?" H 6100 5900 50  0001 C CNN
+F 1 "+3.3V" H 6115 6178 50  0000 L CNN
+F 2 "" H 6100 6050 50  0001 C CNN
+F 3 "" H 6100 6050 50  0001 C CNN
+	1    6100 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5F96C2F7
+P 6100 7550
+F 0 "#PWR?" H 6100 7300 50  0001 C CNN
+F 1 "GNDD" H 6104 7395 50  0000 C CNN
+F 2 "" H 6100 7550 50  0001 C CNN
+F 3 "" H 6100 7550 50  0001 C CNN
+	1    6100 7550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6600 6950
+NoConn ~ 6600 6750
+Text GLabel 4800 6450 2    50   Input ~ 0
+SWCLK
+Text GLabel 4800 6250 2    50   Input ~ 0
+NRST
+Text GLabel 4800 6550 2    50   Input ~ 0
+SWDIO
+Text GLabel 4800 6650 2    50   Input ~ 0
+SWO
+Text GLabel 4800 7250 2    50   Output ~ 0
+TX
+Text GLabel 4800 7150 2    50   Input ~ 0
+RX
+$Comp
+L Connector:Conn_ST_STDC14 J?
+U 1 1 5F984CB7
+P 4300 6750
+F 0 "J?" H 3857 6796 50  0000 R CNN
+F 1 "STDC14-THT" H 3857 6705 50  0000 R CNN
+F 2 "" H 4300 6750 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/user_manual/group1/99/49/91/b6/b2/3a/46/e5/DM00526767/files/DM00526767.pdf/jcr:content/translations/en.DM00526767.pdf" V 3950 5500 50  0001 C CNN
+	1    4300 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 7450 4300 7500
+Wire Wire Line
+	4300 7500 4200 7500
+Wire Wire Line
+	4200 7500 4200 7450
+Wire Wire Line
+	4300 7500 4300 7550
+Connection ~ 4300 7500
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F984CC2
+P 4300 6050
+F 0 "#PWR?" H 4300 5900 50  0001 C CNN
+F 1 "+3.3V" H 4315 6178 50  0000 L CNN
+F 2 "" H 4300 6050 50  0001 C CNN
+F 3 "" H 4300 6050 50  0001 C CNN
+	1    4300 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5F984CC8
+P 4300 7550
+F 0 "#PWR?" H 4300 7300 50  0001 C CNN
+F 1 "GNDD" H 4304 7395 50  0000 C CNN
+F 2 "" H 4300 7550 50  0001 C CNN
+F 3 "" H 4300 7550 50  0001 C CNN
+	1    4300 7550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4800 6950
+NoConn ~ 4800 6750
 $EndSCHEMATC
