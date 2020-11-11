@@ -1317,4 +1317,6 @@ F 3 "~" H 1100 1300 50  0001 C CNN
 	1    950  1350
 	1    0    0    -1  
 $EndComp
+Text Notes 800  7100 0    50   ~ 0
+The USB specification suggests to use tantalum capacitor \nlower than 10 uF to prevent spikes above 500 mA at plugging
 $EndSCHEMATC
