@@ -838,10 +838,8 @@ F 3 "~" H 7850 5700 50  0001 C CNN
 $EndComp
 Text GLabel 8200 5550 2    50   Input ~ 0
 VBAT_Protected
-Text GLabel 7850 900  2    50   Input ~ 0
+Text GLabel 7700 900  0    50   Input ~ 0
 VBAT_Protected
-Wire Wire Line
-	7850 900  7750 900 
 Wire Wire Line
 	7750 900  7750 1050
 Wire Wire Line
@@ -1542,4 +1540,6 @@ F 3 "" H 4300 7550 50  0001 C CNN
 $EndComp
 NoConn ~ 4800 6950
 NoConn ~ 4800 6750
+Wire Wire Line
+	7700 900  7750 900 
 $EndSCHEMATC
