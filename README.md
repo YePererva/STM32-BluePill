@@ -32,6 +32,7 @@ With all of that, I also want to keep pin-to-pin compatibility with original Blu
 
 # Afterwords
 1. If you are looking for higher performance, take a look at STM32F411CE or STM32F401CC boards in similar form-factor (however, with different pinout) in [this](https://github.com/WeActTC/MiniF4-STM32F4x1) repository by WeAct Team.
+
 2. WeAct Team also released a similar project for STM32F103CxT6 microcontroller and called it a [BluePill Plus](https://github.com/WeActTC/BluePill-Plus) with some differences:
   - not pin-to-pin compatible (right top pin near USB port is `+5V`, not `GND`)
   - the user LED moved to `PB2` pin, while should be attached `PC13`
