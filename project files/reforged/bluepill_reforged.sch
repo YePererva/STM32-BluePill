@@ -145,20 +145,20 @@ Wire Wire Line
 	8900 1150 9300 1150
 Connection ~ 9300 1150
 Wire Wire Line
-	900  6400 900  6750
+	900  6150 900  6500
 $Comp
 L power:+3.3V #PWR038
 U 1 1 5E0C47D9
-P 1700 5750
-F 0 "#PWR038" H 1700 5600 50  0001 C CNN
-F 1 "+3.3V" H 1715 5923 50  0000 C CNN
-F 2 "" H 1700 5750 50  0001 C CNN
-F 3 "" H 1700 5750 50  0001 C CNN
-	1    1700 5750
+P 1700 5500
+F 0 "#PWR038" H 1700 5350 50  0001 C CNN
+F 1 "+3.3V" H 1715 5673 50  0000 C CNN
+F 2 "" H 1700 5500 50  0001 C CNN
+F 3 "" H 1700 5500 50  0001 C CNN
+	1    1700 5500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1700 6400 1700 6750
+	1700 6150 1700 6500
 Wire Wire Line
 	3600 1350 3600 1400
 Connection ~ 3600 1400
@@ -167,55 +167,55 @@ Wire Wire Line
 $Comp
 L Device:CP C14
 U 1 1 5E0C042C
-P 900 6250
-F 0 "C14" H 1018 6296 50  0000 L CNN
-F 1 "10 uF" H 1018 6205 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-12_Kemet-T" H 938 6100 50  0001 C CNN
-F 3 "~" H 900 6250 50  0001 C CNN
-	1    900  6250
+P 900 6000
+F 0 "C14" H 1018 6046 50  0000 L CNN
+F 1 "10 uF" H 1018 5955 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-12_Kemet-T" H 938 5850 50  0001 C CNN
+F 3 "~" H 900 6000 50  0001 C CNN
+	1    900  6000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR037
 U 1 1 5E0CACD2
-P 900 5750
-F 0 "#PWR037" H 900 5600 50  0001 C CNN
-F 1 "+5V" H 915 5923 50  0000 C CNN
-F 2 "" H 900 5750 50  0001 C CNN
-F 3 "" H 900 5750 50  0001 C CNN
-	1    900  5750
+P 900 5500
+F 0 "#PWR037" H 900 5350 50  0001 C CNN
+F 1 "+5V" H 915 5673 50  0000 C CNN
+F 2 "" H 900 5500 50  0001 C CNN
+F 3 "" H 900 5500 50  0001 C CNN
+	1    900  5500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	900  5750 900  5950
+	900  5500 900  5700
 $Comp
 L Device:CP C15
 U 1 1 5E0AA90C
-P 1700 6250
-F 0 "C15" H 1818 6296 50  0000 L CNN
-F 1 "100 uF" H 1818 6205 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-12_Kemet-T" H 1738 6100 50  0001 C CNN
-F 3 "~" H 1700 6250 50  0001 C CNN
-	1    1700 6250
+P 1700 6000
+F 0 "C15" H 1818 6046 50  0000 L CNN
+F 1 "100 uF" H 1818 5955 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-12_Kemet-T" H 1738 5850 50  0001 C CNN
+F 3 "~" H 1700 6000 50  0001 C CNN
+	1    1700 6000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1700 6100 1700 5950
+	1700 5850 1700 5700
 Wire Wire Line
-	1600 5950 1700 5950
-Connection ~ 1700 5950
+	1600 5700 1700 5700
+Connection ~ 1700 5700
 Wire Wire Line
-	1700 5950 1700 5750
+	1700 5700 1700 5500
 Wire Wire Line
-	1000 5950 900  5950
-Connection ~ 900  5950
+	1000 5700 900  5700
+Connection ~ 900  5700
 Wire Wire Line
-	900  5950 900  6100
+	900  5700 900  5850
 Wire Wire Line
-	1300 6250 1300 6750
-Text Notes 600  5500 0    50   ~ 0
+	1300 6000 1300 6500
+Text Notes 600  5250 0    50   ~ 0
 Among Linear Voltage Regulators good option is AMS1117-3.3 (SOT223).\nIt can deliver up to 800mA. Compatible parts are:\n- LM1117-3.3\n- NCP1117-3.3\nNote:\nMICREL MIC3910-3.3WS has difference: tab is GND, not Vout
-Text Notes 650  7350 0    50   ~ 0
+Text Notes 650  7100 0    50   ~ 0
 Other effective low-drop linear regulators are:\nTI LM3940, up to 1A, but isincompatible in pinout\nLMS8117AMP3.3\n
 $Comp
 L bluepill_reforged-rescue:USB_C_Receptacle_USB2.0-Connector J1
@@ -242,21 +242,21 @@ Wire Wire Line
 	1650 1850 1650 1750
 Wire Wire Line
 	2800 1400 3300 1400
-Text Notes 2250 5900 0    50   ~ 0
+Text Notes 2250 5650 0    50   ~ 0
 RedPill utilizes AMS1117 and used:\n- pre-capacitor : 25V 100 uF\n- post-capacitor : 6.3 V 330 uF
 $Comp
 L Connector_Generic:Conn_01x20 J3
 U 1 1 5DEFA97C
-P 10800 5350
-F 0 "J3" H 10750 6450 50  0000 L CNN
-F 1 "Right Castellation" H 10450 6400 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 10800 5350 50  0001 C CNN
-F 3 "~" H 10800 5350 50  0001 C CNN
-	1    10800 5350
+P 6100 5650
+F 0 "J3" H 6050 6750 50  0000 L CNN
+F 1 "Right Castellation" H 5750 6700 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 6100 5650 50  0001 C CNN
+F 3 "~" H 6100 5650 50  0001 C CNN
+	1    6100 5650
 	1    0    0    1   
 $EndComp
-Text Notes 10750 4150 2    100  Italic 20
-Pin Header\nas DIP-40
+Text Notes 6250 4250 2    100  Italic 20
+Pin Headers as DIP-40
 $Comp
 L Device:Crystal_GND23 Y1
 U 1 1 5E0FCA9B
@@ -294,7 +294,7 @@ $Comp
 L Device:R R4
 U 1 1 5E0D7958
 P 2050 1350
-F 0 "R4" V 2150 1350 50  0000 C CNN
+F 0 "R4" V 1950 1350 50  0000 C CNN
 F 1 "5K1" V 2050 1350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1980 1350 50  0001 C CNN
 F 3 "~" H 2050 1350 50  0001 C CNN
@@ -666,172 +666,161 @@ Text GLabel 8550 3750 2    50   Input ~ 0
 PA14
 Text GLabel 8550 3850 2    50   Input ~ 0
 PA15
-Text GLabel 10600 4650 0    50   Input ~ 0
+Text GLabel 5900 4950 0    50   Input ~ 0
 NRST
-Text GLabel 10600 4750 0    50   Input ~ 0
+Text GLabel 5900 5050 0    50   Input ~ 0
 PB11
-Text GLabel 10600 4850 0    50   Input ~ 0
+Text GLabel 5900 5150 0    50   Input ~ 0
 PB10
-Text GLabel 10600 4950 0    50   Input ~ 0
+Text GLabel 5900 5250 0    50   Input ~ 0
 PB1
-Text GLabel 10600 5050 0    50   Input ~ 0
+Text GLabel 5900 5350 0    50   Input ~ 0
 PB0
-Text GLabel 10600 5150 0    50   Input ~ 0
+Text GLabel 5900 5450 0    50   Input ~ 0
 PA7
-Text GLabel 10600 5250 0    50   Input ~ 0
+Text GLabel 5900 5550 0    50   Input ~ 0
 PA6
-Text GLabel 10600 5350 0    50   Input ~ 0
+Text GLabel 5900 5650 0    50   Input ~ 0
 PA5
-Text GLabel 10600 5450 0    50   Input ~ 0
+Text GLabel 5900 5750 0    50   Input ~ 0
 PA4
-Text GLabel 10600 5550 0    50   Input ~ 0
+Text GLabel 5900 5850 0    50   Input ~ 0
 PA3
-Text GLabel 10600 5650 0    50   Input ~ 0
+Text GLabel 5900 5950 0    50   Input ~ 0
 PA2
-Text GLabel 10600 5750 0    50   Input ~ 0
+Text GLabel 5900 6050 0    50   Input ~ 0
 PA1
-Text GLabel 10600 5850 0    50   Input ~ 0
+Text GLabel 5900 6150 0    50   Input ~ 0
 PA0
-Text GLabel 10600 5950 0    50   Input ~ 0
+Text GLabel 5900 6250 0    50   Input ~ 0
 PC15
-Text GLabel 10600 6050 0    50   Input ~ 0
+Text GLabel 5900 6350 0    50   Input ~ 0
 PC14
-Text GLabel 10600 6150 0    50   Input ~ 0
+Text GLabel 5900 6450 0    50   Input ~ 0
 PC13
-Text GLabel 9900 5950 2    50   Input ~ 0
+Text GLabel 4700 6100 2    50   Input ~ 0
 PB9
-Text GLabel 9900 5850 2    50   Input ~ 0
+Text GLabel 4700 6000 2    50   Input ~ 0
 PB8
-Text GLabel 9900 5750 2    50   Input ~ 0
+Text GLabel 4700 5900 2    50   Input ~ 0
 PB7
-Text GLabel 9900 5650 2    50   Input ~ 0
+Text GLabel 4700 5800 2    50   Input ~ 0
 PB6
-Text GLabel 9900 5550 2    50   Input ~ 0
+Text GLabel 4700 5700 2    50   Input ~ 0
 PB5
-Text GLabel 9900 5450 2    50   Input ~ 0
+Text GLabel 4700 5600 2    50   Input ~ 0
 PB4
-Text GLabel 9900 5350 2    50   Input ~ 0
+Text GLabel 4700 5500 2    50   Input ~ 0
 PB3
-Text GLabel 9900 5250 2    50   Input ~ 0
+Text GLabel 4700 5400 2    50   Input ~ 0
 PA15
-Text GLabel 9900 5150 2    50   Input ~ 0
+Text GLabel 4700 5300 2    50   Input ~ 0
 PA12
-Text GLabel 9900 5050 2    50   Input ~ 0
+Text GLabel 4700 5200 2    50   Input ~ 0
 PA11
-Text GLabel 9900 4950 2    50   Input ~ 0
+Text GLabel 4700 5100 2    50   Input ~ 0
 PA10
-Text GLabel 9900 4850 2    50   Input ~ 0
+Text GLabel 4700 5000 2    50   Input ~ 0
 PA9
-Text GLabel 9900 4750 2    50   Input ~ 0
+Text GLabel 4700 4900 2    50   Input ~ 0
 PA8
-Text GLabel 9900 4650 2    50   Input ~ 0
+Text GLabel 4700 4800 2    50   Input ~ 0
 PB15
-Text GLabel 9900 4550 2    50   Input ~ 0
+Text GLabel 4700 4700 2    50   Input ~ 0
 PB14
-Text GLabel 9900 4450 2    50   Input ~ 0
+Text GLabel 4700 4600 2    50   Input ~ 0
 PB13
-Text GLabel 9900 4350 2    50   Input ~ 0
+Text GLabel 4700 4500 2    50   Input ~ 0
 PB12
 $Comp
 L power:+5V #PWR040
 U 1 1 5E5BBA7B
-P 10200 5950
-F 0 "#PWR040" H 10200 5800 50  0001 C CNN
-F 1 "+5V" H 10215 6123 50  0000 C CNN
-F 2 "" H 10200 5950 50  0001 C CNN
-F 3 "" H 10200 5950 50  0001 C CNN
-	1    10200 5950
+P 5000 6100
+F 0 "#PWR040" H 5000 5950 50  0001 C CNN
+F 1 "+5V" H 5015 6273 50  0000 C CNN
+F 2 "" H 5000 6100 50  0001 C CNN
+F 3 "" H 5000 6100 50  0001 C CNN
+	1    5000 6100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9900 6050 10200 6050
+	4700 6200 5000 6200
 Wire Wire Line
-	10200 6050 10200 5950
+	5000 6200 5000 6100
 $Comp
 L power:+3.3V #PWR034
 U 1 1 5E5D19A3
-P 10350 4500
-F 0 "#PWR034" H 10350 4350 50  0001 C CNN
-F 1 "+3.3V" H 10365 4673 50  0000 C CNN
-F 2 "" H 10350 4500 50  0001 C CNN
-F 3 "" H 10350 4500 50  0001 C CNN
-	1    10350 4500
+P 5650 4800
+F 0 "#PWR034" H 5650 4650 50  0001 C CNN
+F 1 "+3.3V" H 5665 4973 50  0000 C CNN
+F 2 "" H 5650 4800 50  0001 C CNN
+F 3 "" H 5650 4800 50  0001 C CNN
+	1    5650 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10600 4550 10350 4550
+	5900 4850 5650 4850
 Wire Wire Line
-	10350 4550 10350 4500
+	5650 4850 5650 4800
 Wire Wire Line
-	10600 4450 10550 4450
+	5900 4750 5850 4750
 Wire Wire Line
-	10550 4450 10550 4350
+	5850 4750 5850 4650
 Wire Wire Line
-	11000 4250 11000 4450
+	6300 4550 6300 4750
 Wire Wire Line
-	10600 4350 10550 4350
-Connection ~ 10550 4350
+	5900 4650 5850 4650
+Connection ~ 5850 4650
 Wire Wire Line
-	10550 4350 10550 4250
-Text GLabel 9250 2600 0    50   Input ~ 0
+	5850 4650 5850 4550
+Text GLabel 9950 5850 0    50   Input ~ 0
 SWO
-Text GLabel 9400 2600 2    50   Input ~ 0
+Text GLabel 10100 5850 2    50   Input ~ 0
 PB3
-Text Notes 5550 5650 0    100  Italic 20
+Text Notes 9250 3700 0    100  Italic 20
 STDC14 interface
-$Comp
-L power:+BATT #PWR043
-U 1 1 5E61B0D9
-P 10600 6250
-F 0 "#PWR043" H 10600 6100 50  0001 C CNN
-F 1 "+BATT" V 10615 6377 50  0000 L CNN
-F 2 "" H 10600 6250 50  0001 C CNN
-F 3 "" H 10600 6250 50  0001 C CNN
-	1    10600 6250
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:+BATT #PWR035
 U 1 1 5E61C7BB
-P 7550 5350
-F 0 "#PWR035" H 7550 5200 50  0001 C CNN
-F 1 "+BATT" H 7565 5523 50  0000 C CNN
-F 2 "" H 7550 5350 50  0001 C CNN
-F 3 "" H 7550 5350 50  0001 C CNN
-	1    7550 5350
+P 9500 2700
+F 0 "#PWR035" H 9500 2550 50  0001 C CNN
+F 1 "+BATT" H 9515 2873 50  0000 C CNN
+F 2 "" H 9500 2700 50  0001 C CNN
+F 3 "" H 9500 2700 50  0001 C CNN
+	1    9500 2700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR036
 U 1 1 5E61D33E
-P 8150 5350
-F 0 "#PWR036" H 8150 5200 50  0001 C CNN
-F 1 "+3.3V" H 8165 5478 50  0000 L CNN
-F 2 "" H 8150 5350 50  0001 C CNN
-F 3 "" H 8150 5350 50  0001 C CNN
-	1    8150 5350
+P 10100 2700
+F 0 "#PWR036" H 10100 2550 50  0001 C CNN
+F 1 "+3.3V" H 10115 2828 50  0000 L CNN
+F 2 "" H 10100 2700 50  0001 C CNN
+F 3 "" H 10100 2700 50  0001 C CNN
+	1    10100 2700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C13
 U 1 1 5E61F79C
-P 7850 5700
-F 0 "C13" H 7965 5746 50  0000 L CNN
-F 1 "100n" H 7965 5655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7888 5550 50  0001 C CNN
-F 3 "~" H 7850 5700 50  0001 C CNN
-	1    7850 5700
+P 9800 3050
+F 0 "C13" H 9915 3096 50  0000 L CNN
+F 1 "100n" H 9915 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9838 2900 50  0001 C CNN
+F 3 "~" H 9800 3050 50  0001 C CNN
+	1    9800 3050
 	1    0    0    -1  
 $EndComp
-Text GLabel 8200 5550 2    50   Input ~ 0
+Text GLabel 10150 2900 2    50   Input ~ 0
 VBAT_Protected
 Text GLabel 7700 900  0    50   Input ~ 0
 VBAT_Protected
 Wire Wire Line
 	7750 900  7750 1050
 Wire Wire Line
-	7850 5550 8200 5550
-Text Notes 7250 5000 0    100  Italic 20
+	9800 2900 10150 2900
+Text Notes 9200 2350 0    100  Italic 20
 RTC Power Protection
 Wire Wire Line
 	6200 2750 6300 2750
@@ -888,54 +877,54 @@ Wire Notes Line
 	5500 500  5500 3950
 Text Notes 8800 1950 0    50   ~ 0
 Low-pass filter for analog circuits\nDecoupling capacitors: \n1 per each VDD, and for VDA to place in situ
-Text Notes 600  4500 0    100  Italic 20
+Text Notes 600  4250 0    100  Italic 20
 Power Supply
-Text Notes 600  4950 0    50   ~ 0
+Text Notes 600  4700 0    50   ~ 0
 Originally, BluePill contained RT8183-B as voltage regulator. It is outdated. \nDirect replacement: RT9193-33GB, but it is capable to deliver up to 300mA.\nUSB type C can provide up to 1.5 A over USB 2.0 connectivity.\n- to provide < 1A use Linear Voltage regulators\n- to go > 1A : use DC-DC converters
 NoConn ~ 4850 1350
 NoConn ~ 4850 950 
-Text GLabel 9250 2700 0    50   Input ~ 0
+Text GLabel 9950 5950 0    50   Input ~ 0
 SWDIO
-Text GLabel 9250 2800 0    50   Input ~ 0
+Text GLabel 9950 6050 0    50   Input ~ 0
 SWCLK
 Text GLabel 8550 3650 2    50   Input ~ 0
 PA13
-Text GLabel 9400 2700 2    50   Input ~ 0
+Text GLabel 10100 5950 2    50   Input ~ 0
 PA13
-Text GLabel 9400 2800 2    50   Input ~ 0
+Text GLabel 10100 6050 2    50   Input ~ 0
 PA14
 Wire Notes Line
 	6750 500  6750 3950
 Wire Wire Line
-	9400 2600 9250 2600
+	10100 5850 9950 5850
 Wire Wire Line
-	9250 2700 9400 2700
+	9950 5950 10100 5950
 Wire Wire Line
-	9400 2800 9250 2800
+	10100 6050 9950 6050
 $Comp
 L Diode:BAT54C D4
 U 1 1 5E16540C
-P 7850 5350
-F 0 "D4" H 7850 5575 50  0000 C CNN
-F 1 "BAT54C" H 7850 5484 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7925 5475 50  0001 L CNN
-F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 7770 5350 50  0001 C CNN
-	1    7850 5350
+P 9800 2700
+F 0 "D4" H 9800 2925 50  0000 C CNN
+F 1 "BAT54C" H 9800 2834 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9875 2825 50  0001 L CNN
+F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 9720 2700 50  0001 C CNN
+	1    9800 2700
 	1    0    0    -1  
 $EndComp
-Connection ~ 7850 5550
-Text GLabel 9250 2900 0    50   Input ~ 0
+Connection ~ 9800 2900
+Text GLabel 9950 6150 0    50   Input ~ 0
 RX
-Text GLabel 9250 3000 0    50   Output ~ 0
+Text GLabel 9950 6250 0    50   Output ~ 0
 TX
-Text GLabel 9400 3000 2    50   Input ~ 0
+Text GLabel 10100 6250 2    50   Input ~ 0
 PA9
-Text GLabel 9400 2900 2    50   Input ~ 0
+Text GLabel 10100 6150 2    50   Input ~ 0
 PA10
 Wire Wire Line
-	9250 2900 9400 2900
+	9950 6150 10100 6150
 Wire Wire Line
-	9250 3000 9400 3000
+	9950 6250 10100 6250
 $Comp
 L power:VBUS #PWR027
 U 1 1 5E28CF9E
@@ -959,7 +948,7 @@ F 3 "~" H 750 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10550 4250 11000 4250
+	5850 4550 6300 4550
 $Comp
 L power:VBUS #PWR01
 U 1 1 5DED193B
@@ -1250,84 +1239,84 @@ $EndComp
 $Comp
 L power:GNDD #PWR033
 U 1 1 5E90B02B
-P 11000 4450
-F 0 "#PWR033" H 11000 4200 50  0001 C CNN
-F 1 "GNDD" H 11004 4295 50  0000 C CNN
-F 2 "" H 11000 4450 50  0001 C CNN
-F 3 "" H 11000 4450 50  0001 C CNN
-	1    11000 4450
+P 6300 4750
+F 0 "#PWR033" H 6300 4500 50  0001 C CNN
+F 1 "GNDD" H 6304 4595 50  0000 C CNN
+F 2 "" H 6300 4750 50  0001 C CNN
+F 3 "" H 6300 4750 50  0001 C CNN
+	1    6300 4750
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDD #PWR044
 U 1 1 5E90B536
-P 10200 6300
-F 0 "#PWR044" H 10200 6050 50  0001 C CNN
-F 1 "GNDD" H 10204 6145 50  0000 C CNN
-F 2 "" H 10200 6300 50  0001 C CNN
-F 3 "" H 10200 6300 50  0001 C CNN
-	1    10200 6300
+P 5000 6450
+F 0 "#PWR044" H 5000 6200 50  0001 C CNN
+F 1 "GNDD" H 5004 6295 50  0000 C CNN
+F 2 "" H 5000 6450 50  0001 C CNN
+F 3 "" H 5000 6450 50  0001 C CNN
+	1    5000 6450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDD #PWR039
 U 1 1 5E90BB71
-P 7850 5850
-F 0 "#PWR039" H 7850 5600 50  0001 C CNN
-F 1 "GNDD" H 7854 5695 50  0000 C CNN
-F 2 "" H 7850 5850 50  0001 C CNN
-F 3 "" H 7850 5850 50  0001 C CNN
-	1    7850 5850
+P 9800 3200
+F 0 "#PWR039" H 9800 2950 50  0001 C CNN
+F 1 "GNDD" H 9804 3045 50  0000 C CNN
+F 2 "" H 9800 3200 50  0001 C CNN
+F 3 "" H 9800 3200 50  0001 C CNN
+	1    9800 3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDD #PWR045
 U 1 1 5E90C1F7
-P 900 6750
-F 0 "#PWR045" H 900 6500 50  0001 C CNN
-F 1 "GNDD" H 904 6595 50  0000 C CNN
-F 2 "" H 900 6750 50  0001 C CNN
-F 3 "" H 900 6750 50  0001 C CNN
-	1    900  6750
+P 900 6500
+F 0 "#PWR045" H 900 6250 50  0001 C CNN
+F 1 "GNDD" H 904 6345 50  0000 C CNN
+F 2 "" H 900 6500 50  0001 C CNN
+F 3 "" H 900 6500 50  0001 C CNN
+	1    900  6500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDD #PWR046
 U 1 1 5E90D55D
-P 1300 6750
-F 0 "#PWR046" H 1300 6500 50  0001 C CNN
-F 1 "GNDD" H 1304 6595 50  0000 C CNN
-F 2 "" H 1300 6750 50  0001 C CNN
-F 3 "" H 1300 6750 50  0001 C CNN
-	1    1300 6750
+P 1300 6500
+F 0 "#PWR046" H 1300 6250 50  0001 C CNN
+F 1 "GNDD" H 1304 6345 50  0000 C CNN
+F 2 "" H 1300 6500 50  0001 C CNN
+F 3 "" H 1300 6500 50  0001 C CNN
+	1    1300 6500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDD #PWR047
 U 1 1 5E90D68B
-P 1700 6750
-F 0 "#PWR047" H 1700 6500 50  0001 C CNN
-F 1 "GNDD" H 1704 6595 50  0000 C CNN
-F 2 "" H 1700 6750 50  0001 C CNN
-F 3 "" H 1700 6750 50  0001 C CNN
-	1    1700 6750
+P 1700 6500
+F 0 "#PWR047" H 1700 6250 50  0001 C CNN
+F 1 "GNDD" H 1704 6345 50  0000 C CNN
+F 2 "" H 1700 6500 50  0001 C CNN
+F 3 "" H 1700 6500 50  0001 C CNN
+	1    1700 6500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9900 6150 10200 6150
+	4700 6300 5000 6300
 Wire Wire Line
-	10200 6150 10200 6300
-Text GLabel 6600 6450 2    50   Input ~ 0
+	5000 6300 5000 6450
+Text GLabel 10350 4350 2    50   Input ~ 0
 SWCLK
-Text GLabel 6600 6250 2    50   Input ~ 0
+Text GLabel 10350 4150 2    50   Input ~ 0
 NRST
-Text GLabel 6600 6550 2    50   Input ~ 0
+Text GLabel 10350 4450 2    50   Input ~ 0
 SWDIO
-Text GLabel 6600 6650 2    50   Input ~ 0
+Text GLabel 10350 4550 2    50   Input ~ 0
 SWO
-Text GLabel 6600 7250 2    50   Output ~ 0
+Text GLabel 10350 5150 2    50   Output ~ 0
 TX
-Text GLabel 6600 7150 2    50   Input ~ 0
+Text GLabel 10350 5050 2    50   Input ~ 0
 RX
 $Comp
 L Device:Crystal_GND24 Y2
@@ -1365,33 +1354,33 @@ $EndComp
 Wire Wire Line
 	4700 2900 4700 3000
 Wire Wire Line
-	9900 6250 10000 6250
+	4700 6400 4800 6400
 Wire Wire Line
-	10000 6250 10000 6350
+	4800 6400 4800 6500
 $Comp
 L Connector_Generic:Conn_01x20 J2
 U 1 1 5DEFD8E5
-P 9700 5350
-F 0 "J2" H 9700 4150 50  0000 C CNN
-F 1 "Left Castellation" H 9700 4200 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 9700 5350 50  0001 C CNN
-F 3 "~" H 9700 5350 50  0001 C CNN
-	1    9700 5350
+P 4500 5500
+F 0 "J2" H 4500 4300 50  0000 C CNN
+F 1 "Left Castellation" H 4500 4350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 4500 5500 50  0001 C CNN
+F 3 "~" H 4500 5500 50  0001 C CNN
+	1    4500 5500
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9450 6250 9450 6350
+	4250 6400 4250 6500
 Wire Wire Line
-	10000 6350 9450 6350
+	4800 6500 4250 6500
 $Comp
 L power:+3.3V #PWR042
 U 1 1 5E5CAD12
-P 9450 6250
-F 0 "#PWR042" H 9450 6100 50  0001 C CNN
-F 1 "+3.3V" H 9465 6423 50  0000 C CNN
-F 2 "" H 9450 6250 50  0001 C CNN
-F 3 "" H 9450 6250 50  0001 C CNN
-	1    9450 6250
+P 4250 6400
+F 0 "#PWR042" H 4250 6250 50  0001 C CNN
+F 1 "+3.3V" H 4265 6573 50  0000 C CNN
+F 2 "" H 4250 6400 50  0001 C CNN
+F 3 "" H 4250 6400 50  0001 C CNN
+	1    4250 6400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1408,47 +1397,47 @@ $EndComp
 $Comp
 L Connector:Conn_ST_STDC14 J4
 U 1 1 5F95D9CB
-P 6100 6750
-F 0 "J4" H 5656 6796 50  0000 R CNN
-F 1 "STDC14-SMD" H 5656 6705 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x07_P1.27mm_Vertical_SMD" H 6100 6750 50  0001 C CNN
-F 3 "https://www.st.com/content/ccc/resource/technical/document/user_manual/group1/99/49/91/b6/b2/3a/46/e5/DM00526767/files/DM00526767.pdf/jcr:content/translations/en.DM00526767.pdf" V 5750 5500 50  0001 C CNN
-	1    6100 6750
+P 9850 4650
+F 0 "J4" H 9406 4696 50  0000 R CNN
+F 1 "STDC14-SMD" H 9406 4605 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x07_P1.27mm_Vertical_SMD" H 9850 4650 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/user_manual/group1/99/49/91/b6/b2/3a/46/e5/DM00526767/files/DM00526767.pdf/jcr:content/translations/en.DM00526767.pdf" V 9500 3400 50  0001 C CNN
+	1    9850 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 7450 6100 7500
+	9850 5350 9850 5400
 Wire Wire Line
-	6100 7500 6000 7500
+	9850 5400 9750 5400
 Wire Wire Line
-	6000 7500 6000 7450
+	9750 5400 9750 5350
 Wire Wire Line
-	6100 7500 6100 7550
-Connection ~ 6100 7500
+	9850 5400 9850 5450
+Connection ~ 9850 5400
 $Comp
 L power:+3.3V #PWR041
 U 1 1 5F96AFF5
-P 6100 6050
-F 0 "#PWR041" H 6100 5900 50  0001 C CNN
-F 1 "+3.3V" H 6115 6178 50  0000 L CNN
-F 2 "" H 6100 6050 50  0001 C CNN
-F 3 "" H 6100 6050 50  0001 C CNN
-	1    6100 6050
+P 9850 3950
+F 0 "#PWR041" H 9850 3800 50  0001 C CNN
+F 1 "+3.3V" H 9865 4078 50  0000 L CNN
+F 2 "" H 9850 3950 50  0001 C CNN
+F 3 "" H 9850 3950 50  0001 C CNN
+	1    9850 3950
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDD #PWR048
 U 1 1 5F96C2F7
-P 6100 7550
-F 0 "#PWR048" H 6100 7300 50  0001 C CNN
-F 1 "GNDD" H 6104 7395 50  0000 C CNN
-F 2 "" H 6100 7550 50  0001 C CNN
-F 3 "" H 6100 7550 50  0001 C CNN
-	1    6100 7550
+P 9850 5450
+F 0 "#PWR048" H 9850 5200 50  0001 C CNN
+F 1 "GNDD" H 9854 5295 50  0000 C CNN
+F 2 "" H 9850 5450 50  0001 C CNN
+F 3 "" H 9850 5450 50  0001 C CNN
+	1    9850 5450
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6600 6950
-NoConn ~ 6600 6750
+NoConn ~ 10350 4850
+NoConn ~ 10350 4650
 Wire Wire Line
 	7700 900  7750 900 
 $Comp
@@ -1537,12 +1526,31 @@ Connection ~ 8900 1150
 $Comp
 L Regulator_Linear:LD1117S33TR_SOT223 U2
 U 1 1 5FCF2C57
-P 1300 5950
-F 0 "U2" H 1300 6192 50  0000 C CNN
-F 1 "LD1117S33" H 1300 6101 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 1300 6150 50  0001 C CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 1400 5700 50  0001 C CNN
-	1    1300 5950
+P 1300 5700
+F 0 "U2" H 1300 5942 50  0000 C CNN
+F 1 "LD1117S33" H 1300 5851 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 1300 5900 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 1400 5450 50  0001 C CNN
+	1    1300 5700
 	1    0    0    -1  
 $EndComp
+Text Notes 5550 1950 0    50   ~ 0
+On some boards, USER LED\nis attached from PB2 to GND
+$Comp
+L power:+BATT #PWR?
+U 1 1 5FD0BE9B
+P 5500 6500
+F 0 "#PWR?" H 5500 6350 50  0001 C CNN
+F 1 "+BATT" H 5515 6673 50  0000 C CNN
+F 2 "" H 5500 6500 50  0001 C CNN
+F 3 "" H 5500 6500 50  0001 C CNN
+	1    5500 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 6550 5900 6550
+Wire Wire Line
+	5500 6500 5500 6550
+Text Notes 5400 4500 0    50   ~ 0
+On some boards top pin\non this header is +5V after diode
 $EndSCHEMATC
