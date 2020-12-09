@@ -1314,9 +1314,9 @@ Text GLabel 8150 5300 2    50   Input ~ 0
 SWDIO
 Text GLabel 8150 5400 2    50   Input ~ 0
 SWO
-Text GLabel 8150 6000 2    50   Output ~ 0
+Text GLabel 8150 5900 2    50   Output ~ 0
 TX
-Text GLabel 8150 5900 2    50   Input ~ 0
+Text GLabel 8150 6000 2    50   Input ~ 0
 RX
 $Comp
 L Device:Crystal_GND24 Y2
