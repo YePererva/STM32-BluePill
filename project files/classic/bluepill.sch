@@ -1307,7 +1307,7 @@ F 3 "" H 7850 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_B_Micro J1
+L bluepill-rescue:USB_B_Micro-Connector J1
 U 1 1 5F92DE1E
 P 950 1350
 F 0 "J1" H 1007 1817 50  0000 C CNN
